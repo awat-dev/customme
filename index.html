@@ -10,7 +10,7 @@
   <body>
     <!-- header -->
     <header
-      class="w-[85%] mx-auto flex flex-col gap-4 justify-between items-center py-4"
+      class="w-[95%] mx-auto flex flex-col gap-4 justify-between items-center py-4"
     >
       <section
         class="flex w-full flex-row-reverse md:flex-row items-center justify-between gap-5"
@@ -34,13 +34,13 @@
           <input
             type="search"
             placeholder="جستجو در کاستومی"
-            class="outline-none border border-gray-5 py-2 px-3 rounded-2xl max-w-47 sl:max-w-full ld:w-[390px] lg:w-[450px] xl:w-[670px]"
+            class="outline-none border border-gray-5 py-2 px-3 rounded-2xl max-w-47 sl:max-w-full ld:w-[390px] lg:w-[450px] xl:w-[640px]"
           />
-          <button>
+          <button class="hidden md:block">
             <img
               src="./public/icon/search-normal.png"
               alt="search"
-              class="absolute left-4 top-1/2 -translate-y-1/2 text-2xl"
+              class="absolute left-4 top-1/2 -translate-y-1/2"
             />
           </button>
         </form>
@@ -56,18 +56,18 @@
         <div class="hidden md:flex md:gap-4 md:justify-start">
           <a href="#" class="flex items-center gap-1">
             <img src="./public/icon/shopping-cart.png" alt="" class="w-5 h-5" />
-            <span class="text-[12px]">سبد خرید</span>
+            <span class="text-[12px] xl:text-[14px]">سبد خرید</span>
           </a>
 
           <a href="./login.html" class="flex items-center gap-1">
             <img src="./public/icon/user.png" alt="" class="w-5 h-5" />
-            <span class="text-[12px]">حساب کاربری</span>
+            <span class="text-[12px] xl:text-[14px]">حساب کاربری</span>
           </a>
         </div>
       </section>
 
       <section
-        class="flex flex-row-reverse w-full justify-between items-center gap-4 mt-5"
+        class="absolute md:static md:flex flex-row-reverse w-full justify-between items-center gap-4 mt-5"
       >
         <!-- Menu -->
         <div
@@ -75,7 +75,7 @@
         >
           <nav id="mobile-menu">
             <ul
-              class="fixed right-0 top-0 z-40 w-0 max-w-[16rem] h-screen overflow-hidden bg-white flex flex-col gap-2 py-12 px-3 opacity-0 pointer-events-none transition-all duration-300 md:static md:max-w-full md:w-auto md:h-auto md:bg-white md:text-black md:pointer-events-auto md:opacity-100 md:overflow-visible md:flex-row md:py-0 md:pt-2.5 md:gap-3 md:items-start md:justify-start md:px-0 sd:gap-5.5! lg:gap-2! xl:gap-8!"
+              class="fixed right-0 top-0 z-40 w-0 max-w-[16rem] h-screen overflow-hidden bg-white flex flex-col gap-2 py-12 px-3 opacity-0 pointer-events-none transition-all duration-300 md:static md:max-w-full md:w-auto md:h-auto md:bg-white md:text-black md:pointer-events-auto md:opacity-100 md:overflow-visible md:flex-row md:py-0 md:pt-2.5 md:gap-5.5 md:items-start md:justify-start md:px-0 sd:gap-8.5! lg:gap-5! xl:gap-8!"
             >
               <li
                 class="bg-gray-1 mt-5 py-3 px-6 rounded-2xl md:bg-transparent md:p-0 md:text-[14px] ld:text-[16px]! lg:text-[16px] md:m-0 cursor-pointer"
@@ -135,6 +135,54 @@
         </div>
       </section>
     </header>
+
+    <!-- Start Main -->
+
+    <main class="w-[95%] mx-auto">
+      <!-- hero section -->
+
+      <section
+        class="bg-primary-tint-3 py-2 md:py-14 md:px-6 rounded-lg md:flex md:flex-row-reverse md:items-center"
+      >
+        <!-- image hero -->
+        <div class="basis-1/2">
+          <img
+            src="public/image/3 girls 1.png"
+            alt="3girls"
+            class="mx-auto w-[90%]"
+          />
+        </div>
+
+        <!-- text hero -->
+
+        <div class="px-3 md:px-5 basis-1/2">
+          <h1
+            class="font-bold text-[18px] font-primary my-4 text-center md:text-right lg:text-3xl"
+          >
+            آنلاین شاپ کاستومی
+          </h1>
+          <p
+            class="font-normal text-[12px] leading-[180%] mb-4 sl:text-[15px] lg:text-[18px]"
+          >
+            آنلاین شاپ کاستومی محصولات متنوعی داره و این امکان رو بهتون میده
+            خودتون رنگ و طرح و نوشته ی روی محصولات رو انتخاب کنید
+          </p>
+
+          <div class="flex items-center justify-center gap-6 md:justify-start">
+            <a
+              href="#"
+              class="bg-primary text-white px-4 py-2.5 rounded-lg font-normal text-[14px] sl:text-[16px] sl:px-6 sl:py-3 lg:px-12 lg:py-4 lg:font-medium lg:text-[16px]"
+              >شروع طراحی
+            </a>
+            <a
+              href="#"
+              class="border border-primary rounded-lg px-3 py-2 text-primary-shade-7 sl:text-[16px] sl:px-6 sl:py-2.75 lg:px-12 lg:py-3.5 lg:font-medium lg:text-[16px]"
+              >دیدن محصولات</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
     <!-- Javascript -->
     <script src="./src/app.js"></script>
   </body>
