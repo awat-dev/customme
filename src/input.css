@@ -38,6 +38,10 @@
 }
 
 @theme {
+  --breakpoint-sl: 400px;
+  --breakpoint-sd: 850px;
+  --breakpoint-ld: 926px;
+
   /* ==========================================
      Primary Colors
   ========================================== */

@@ -8,6 +8,133 @@
     <link rel="stylesheet" href="./src/output.css" />
   </head>
   <body>
+    <!-- header -->
+    <header
+      class="w-[85%] mx-auto flex flex-col gap-4 justify-between items-center py-4"
+    >
+      <section
+        class="flex w-full flex-row-reverse md:flex-row items-center justify-between gap-5"
+      >
+        <!-- logo -->
+        <div class="flex items-center">
+          <img
+            src="./public/image/LOGO-Mobile.png"
+            alt="Lgomobile"
+            class="block md:hidden h-10 w-10 shrink-0"
+          />
+          <img
+            src="./public/image/Logo-Desktop.png"
+            alt="logodesktop"
+            class="hidden md:block h-12 w-auto shrink-0"
+          />
+        </div>
+
+        <!-- Search -->
+        <form action="#" class="relative">
+          <input
+            type="search"
+            placeholder="جستجو در کاستومی"
+            class="outline-none border border-gray-5 py-2 px-3 rounded-2xl max-w-47 sl:max-w-full ld:w-[390px] lg:w-[450px] xl:w-[670px]"
+          />
+          <button>
+            <img
+              src="./public/icon/search-normal.png"
+              alt="search"
+              class="absolute left-4 top-1/2 -translate-y-1/2 text-2xl"
+            />
+          </button>
+        </form>
+
+        <!-- Menu Berger -->
+        <div>
+          <button id="menu-btn" class="relative block z-50 w-10 h-10 md:hidden">
+            <i id="menu-icon" class="fa fa-bars text-3xl"></i>
+          </button>
+        </div>
+        <!-- Link cart and Login -->
+
+        <div class="hidden md:flex md:gap-4 md:justify-start">
+          <a href="#" class="flex items-center gap-1">
+            <img src="./public/icon/shopping-cart.png" alt="" class="w-5 h-5" />
+            <span class="text-[12px]">سبد خرید</span>
+          </a>
+
+          <a href="./login.html" class="flex items-center gap-1">
+            <img src="./public/icon/user.png" alt="" class="w-5 h-5" />
+            <span class="text-[12px]">حساب کاربری</span>
+          </a>
+        </div>
+      </section>
+
+      <section
+        class="flex flex-row-reverse w-full justify-between items-center gap-4 mt-5"
+      >
+        <!-- Menu -->
+        <div
+          class="relative md:static flex justify-start md:w-auto w-10 h-10 shrink-0"
+        >
+          <nav id="mobile-menu">
+            <ul
+              class="fixed right-0 top-0 z-40 w-0 max-w-[16rem] h-screen overflow-hidden bg-white flex flex-col gap-2 py-12 px-3 opacity-0 pointer-events-none transition-all duration-300 md:static md:max-w-full md:w-auto md:h-auto md:bg-white md:text-black md:pointer-events-auto md:opacity-100 md:overflow-visible md:flex-row md:py-0 md:pt-2.5 md:gap-3 md:items-start md:justify-start md:px-0 sd:gap-5.5! lg:gap-2! xl:gap-8!"
+            >
+              <li
+                class="bg-gray-1 mt-5 py-3 px-6 rounded-2xl md:bg-transparent md:p-0 md:text-[14px] ld:text-[16px]! lg:text-[16px] md:m-0 cursor-pointer"
+              >
+                <a href="#">پوشاک</a>
+              </li>
+
+              <li
+                class="bg-gray-1 py-3 px-6 rounded-2xl md:bg-transparent md:p-0 md:text-[14px] ld:text-[16px]! lg:text-[16px] cursor-pointer"
+              >
+                <a href="#">لوازم خانه</a>
+              </li>
+
+              <li
+                class="bg-gray-1 py-3 px-6 rounded-2xl md:bg-transparent md:p-0 md:text-[14px] ld:text-[16px]! lg:text-[16px] cursor-pointer"
+              >
+                <a href="#">قاب موبایل</a>
+              </li>
+
+              <li
+                class="bg-gray-1 py-3 px-6 rounded-2xl md:bg-transparent md:p-0 md:text-[14px] ld:text-[16px]! lg:text-[16px] cursor-pointer"
+              >
+                <a href="#">مدرسه و اداره</a>
+              </li>
+
+              <li
+                class="bg-gray-1 py-3 px-6 rounded-2xl md:bg-transparent md:p-0 md:text-[14px] ld:text-[16px]! lg:text-[16px] cursor-pointer"
+              >
+                <a href="#">کارت و پوستر</a>
+              </li>
+
+              <li
+                class="bg-gray-1 py-3 px-6 rounded-2xl md:bg-transparent md:p-0 md:text-[14px] ld:text-[16px]! lg:text-[16px] cursor-pointer"
+              >
+                <a href="#">همراه با کاستومی</a>
+              </li>
+
+              <li
+                class="bg-gray-1 py-3 px-6 rounded-2xl md:bg-transparent md:p-0 md:text-[14px] ld:text-[16px]! lg:text-[16px] cursor-pointer"
+              >
+                <a href="#">خدمات مشتریان</a>
+              </li>
+
+              <li
+                class="bg-gray-1 py-3 px-6 rounded-2xl md:bg-transparent md:p-0 md:text-[14px] ld:text-[16px]! lg:text-[16px] cursor-pointer"
+              >
+                <a href="#">راهنمای خرید</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div
+          class="bg-primary text-white py-4 px-4 rounded-2xl hidden lg:block"
+        >
+          <a href="#" class="lg:text-[14px]"> خودت طراحیش کن </a>
+        </div>
+      </section>
+    </header>
     <!-- Javascript -->
     <script src="./src/app.js"></script>
   </body>
