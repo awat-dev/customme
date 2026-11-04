@@ -1,47 +1,4 @@
-@import "tailwindcss";
-
-/*  Add Fonts */
-
-@font-face {
-  font-family: vazir;
-  src: url("../public/fonts/Vazir-Bold-FD-WOL.ttf") format("truetype");
-  font-style: normal;
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: vazir;
-  src: url("../public/fonts/Vazir-FD-WOL.ttf") format("truetype");
-  font-style: normal;
-  font-weight: 800;
-}
-
-@font-face {
-  font-family: vazir;
-  src: url("../public/fonts/Vazir-Medium-FD-WOL.ttf") format("truetype");
-  font-style: normal;
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: vazir;
-  src: url("../public/fonts/Vazir-Light-FD-WOL.ttf") format("truetype");
-  font-style: normal;
-  font-weight: 300;
-}
-
-@font-face {
-  font-family: vazir;
-  src: url("../public/fonts/Vazir-Thin-FD-WOL.woff") format("woff");
-  font-style: normal;
-  font-weight: 200;
-}
-
-@theme {
-  --breakpoint-sl: 400px;
-  --breakpoint-sd: 850px;
-  --breakpoint-ld: 926px;
-
+:root {
   /* ==========================================
      Primary Colors
   ========================================== */
@@ -131,54 +88,48 @@
   --transition: 0.3s ease;
 }
 
-@layer base {
-  body {
-    font-family: var(--font-primary);
-  }
-
-  /* ==========================================
+/* ==========================================
    Headings
 ========================================== */
 
-  h1 {
-    font-family: var(--font-primary);
-    font-size: var(--fs-h1);
-    font-weight: var(--font-weight-bold);
-    line-height: var(--line-height-heading);
-  }
+h1 {
+  font-family: var(--font-primary);
+  font-size: var(--fs-h1);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-heading);
+}
 
-  h2 {
-    font-family: var(--font-primary);
-    font-size: var(--fs-h2);
-    font-weight: var(--font-weight-bold);
-    line-height: var(--line-height-heading);
-  }
+h2 {
+  font-family: var(--font-primary);
+  font-size: var(--fs-h2);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-heading);
+}
 
-  h3 {
-    font-family: var(--font-primary);
-    font-size: var(--fs-h3);
-    font-weight: var(--font-weight-bold);
-    line-height: var(--line-height-heading);
-  }
+h3 {
+  font-family: var(--font-primary);
+  font-size: var(--fs-h3);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-heading);
+}
 
-  h4 {
-    font-family: var(--font-primary);
-    font-size: var(--fs-h4);
-    font-weight: var(--font-weight-bold);
-    line-height: var(--line-height-heading);
-  }
+h4 {
+  font-family: var(--font-primary);
+  font-size: var(--fs-h4);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-heading);
+}
 
-  h5 {
-    font-family: var(--font-primary);
-    font-size: var(--fs-h5);
-    font-weight: var(--font-weight-bold);
-    line-height: var(--line-height-heading);
-  }
+h5 {
+  font-family: var(--font-primary);
+  font-size: var(--fs-h5);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-heading);
+}
 
-  h6 {
-    font-family: var(--font-primary);
-    font-size: var(--fs-h6);
-    font-weight: var(--font-weight-bold);
-    line-height: var(--line-height-heading);
-  }
+h6 {
+  font-family: var(--font-primary);
+  font-size: var(--fs-h6);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-heading);
 }

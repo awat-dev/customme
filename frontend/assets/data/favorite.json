@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "title": "کیف زنانه",
+    "img": "assets/image/favorite-bag.png"
+  },
+  {
+    "id": 2,
+    "title": "جوراب زنانه",
+    "img": "assets/image/favorite-socks.png"
+  },
+  {
+    "id": 3,
+    "title": "قاب موبایل آیفون",
+    "img": "assets/image/favorite-mobile.png"
+  },
+  {
+    "id": 4,
+    "title": "تیشرت مردانه",
+    "img": "assets/image/favorite-tshirt.png"
+  }
+]

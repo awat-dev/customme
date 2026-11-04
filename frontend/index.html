@@ -1,189 +1,1142 @@
 <!doctype html>
-<html lang="fa-IR" dir="rtl">
+<html lang="fa" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>customme</title>
-    <link rel="stylesheet" href="./public/font-awesome/css/all-fonts.min.css" />
-    <link rel="stylesheet" href="./src/output.css" />
+    <title>فروشگاه آنلاین | دسته‌بندی و پرفروش‌ترین محصولات</title>
+    <meta
+      name="description"
+      content="خرید آنلاین محصولات با کیفیت شامل دکور خانه، اکسسوری، قاب موبایل و پرفروش‌ترین محصولات با قیمت مناسب"
+    />
+    <meta name="robots" content="index, follow" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- فونت وزیر -->
+    <link
+      href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- استایل اصلی -->
+
+    <link rel="stylesheet" href="./assets/font-awesome/css/all-fonts.min.css" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/varibales.css" />
+    <link rel="stylesheet" href="./assets/css/fonts.css" />
+    <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
   <body>
-    <!-- header -->
-    <header
-      class="w-[95%] mx-auto flex flex-col gap-4 justify-between items-center py-4"
-    >
-      <section
-        class="flex w-full flex-row-reverse md:flex-row items-center justify-between gap-5"
-      >
-        <!-- logo -->
-        <div class="flex items-center">
+    <!--=============================================================
+     هدر وربسایت
+    =================================================================-->
+
+    <div id="header"></div>
+
+    <main class="main">
+      <!--  Strat info Section  (One) -->
+      <div class="info">
+        <!--  Info Image -->
+        <section class="info__image">
           <img
-            src="./public/image/LOGO-Mobile.png"
-            alt="Lgomobile"
-            class="block md:hidden h-10 w-10 shrink-0"
+            src="./assets/image/3 girls 1.png"
+            alt="image"
+            class="info__img"
           />
-          <img
-            src="./public/image/Logo-Desktop.png"
-            alt="logodesktop"
-            class="hidden md:block h-12 w-auto shrink-0"
-          />
-        </div>
+        </section>
 
-        <!-- Search -->
-        <form action="#" class="relative">
-          <input
-            type="search"
-            placeholder="جستجو در کاستومی"
-            class="outline-none border border-gray-5 py-2 px-3 rounded-2xl max-w-47 sl:max-w-full ld:w-[390px] lg:w-[450px] xl:w-[640px]"
-          />
-          <button class="hidden md:block">
-            <img
-              src="./public/icon/search-normal.png"
-              alt="search"
-              class="absolute left-4 top-1/2 -translate-y-1/2"
-            />
-          </button>
-        </form>
-
-        <!-- Menu Berger -->
-        <div>
-          <button id="menu-btn" class="relative block z-50 w-10 h-10 md:hidden">
-            <i id="menu-icon" class="fa fa-bars text-3xl"></i>
-          </button>
-        </div>
-        <!-- Link cart and Login -->
-
-        <div class="hidden md:flex md:gap-4 md:justify-start">
-          <a href="#" class="flex items-center gap-1">
-            <img src="./public/icon/shopping-cart.png" alt="" class="w-5 h-5" />
-            <span class="text-[12px] xl:text-[14px]">سبد خرید</span>
-          </a>
-
-          <a href="./login.html" class="flex items-center gap-1">
-            <img src="./public/icon/user.png" alt="" class="w-5 h-5" />
-            <span class="text-[12px] xl:text-[14px]">حساب کاربری</span>
-          </a>
-        </div>
-      </section>
-
-      <section
-        class="absolute md:static md:flex flex-row-reverse w-full justify-between items-center gap-4 mt-5"
-      >
-        <!-- Menu -->
-        <div
-          class="relative md:static flex justify-start md:w-auto w-10 h-10 shrink-0"
-        >
-          <nav id="mobile-menu">
-            <ul
-              class="fixed right-0 top-0 z-40 w-0 max-w-[16rem] h-screen overflow-hidden bg-white flex flex-col gap-2 py-12 px-3 opacity-0 pointer-events-none transition-all duration-300 md:static md:max-w-full md:w-auto md:h-auto md:bg-white md:text-black md:pointer-events-auto md:opacity-100 md:overflow-visible md:flex-row md:py-0 md:pt-2.5 md:gap-5.5 md:items-start md:justify-start md:px-0 sd:gap-8.5! lg:gap-5! xl:gap-8!"
-            >
-              <li
-                class="bg-gray-1 mt-5 py-3 px-6 rounded-2xl md:bg-transparent md:p-0 md:text-[14px] ld:text-[16px]! lg:text-[16px] md:m-0 cursor-pointer"
-              >
-                <a href="#">پوشاک</a>
-              </li>
-
-              <li
-                class="bg-gray-1 py-3 px-6 rounded-2xl md:bg-transparent md:p-0 md:text-[14px] ld:text-[16px]! lg:text-[16px] cursor-pointer"
-              >
-                <a href="#">لوازم خانه</a>
-              </li>
-
-              <li
-                class="bg-gray-1 py-3 px-6 rounded-2xl md:bg-transparent md:p-0 md:text-[14px] ld:text-[16px]! lg:text-[16px] cursor-pointer"
-              >
-                <a href="#">قاب موبایل</a>
-              </li>
-
-              <li
-                class="bg-gray-1 py-3 px-6 rounded-2xl md:bg-transparent md:p-0 md:text-[14px] ld:text-[16px]! lg:text-[16px] cursor-pointer"
-              >
-                <a href="#">مدرسه و اداره</a>
-              </li>
-
-              <li
-                class="bg-gray-1 py-3 px-6 rounded-2xl md:bg-transparent md:p-0 md:text-[14px] ld:text-[16px]! lg:text-[16px] cursor-pointer"
-              >
-                <a href="#">کارت و پوستر</a>
-              </li>
-
-              <li
-                class="bg-gray-1 py-3 px-6 rounded-2xl md:bg-transparent md:p-0 md:text-[14px] ld:text-[16px]! lg:text-[16px] cursor-pointer"
-              >
-                <a href="#">همراه با کاستومی</a>
-              </li>
-
-              <li
-                class="bg-gray-1 py-3 px-6 rounded-2xl md:bg-transparent md:p-0 md:text-[14px] ld:text-[16px]! lg:text-[16px] cursor-pointer"
-              >
-                <a href="#">خدمات مشتریان</a>
-              </li>
-
-              <li
-                class="bg-gray-1 py-3 px-6 rounded-2xl md:bg-transparent md:p-0 md:text-[14px] ld:text-[16px]! lg:text-[16px] cursor-pointer"
-              >
-                <a href="#">راهنمای خرید</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-
-        <div
-          class="bg-primary text-white py-4 px-4 rounded-2xl hidden lg:block"
-        >
-          <a href="#" class="lg:text-[14px]"> خودت طراحیش کن </a>
-        </div>
-      </section>
-    </header>
-
-    <!-- Start Main -->
-
-    <main class="w-[95%] mx-auto">
-      <!-- hero section -->
-
-      <section
-        class="bg-primary-tint-3 py-2 md:py-14 md:px-6 rounded-lg md:flex md:flex-row-reverse md:items-center"
-      >
-        <!-- image hero -->
-        <div class="basis-1/2">
-          <img
-            src="public/image/3 girls 1.png"
-            alt="3girls"
-            class="mx-auto w-[90%]"
-          />
-        </div>
-
-        <!-- text hero -->
-
-        <div class="px-3 md:px-5 basis-1/2">
-          <h1
-            class="font-bold text-[18px] font-primary my-4 text-center md:text-right lg:text-3xl"
-          >
-            آنلاین شاپ کاستومی
-          </h1>
-          <p
-            class="font-normal text-[12px] leading-[180%] mb-4 sl:text-[15px] lg:text-[18px]"
-          >
+        <!-- Info Description -->
+        <section class="info__text">
+          <h2 class="info__title">آنلاین شاپ کاستومی</h2>
+          <p class="info__desc">
             آنلاین شاپ کاستومی محصولات متنوعی داره و این امکان رو بهتون میده
             خودتون رنگ و طرح و نوشته ی روی محصولات رو انتخاب کنید
           </p>
+          <div class="info__actions">
+            <a href="#" class="info__link">دیدن محصولات</a>
+            <a href="#" class="info__link">شروع طراحی</a>
+          </div>
+        </section>
+      </div>
 
-          <div class="flex items-center justify-center gap-6 md:justify-start">
-            <a
-              href="#"
-              class="bg-primary text-white px-4 py-2.5 rounded-lg font-normal text-[14px] sl:text-[16px] sl:px-6 sl:py-3 lg:px-12 lg:py-4 lg:font-medium lg:text-[16px]"
-              >شروع طراحی
-            </a>
-            <a
-              href="#"
-              class="border border-primary rounded-lg px-3 py-2 text-primary-shade-7 sl:text-[16px] sl:px-6 sl:py-2.75 lg:px-12 lg:py-3.5 lg:font-medium lg:text-[16px]"
-              >دیدن محصولات</a
-            >
+      <!-- ============================================================
+      بخش دسته‌بندی محصولات
+      ============================================================ -->
+      <section class="category" aria-labelledby="category-title">
+        <div class="category__container">
+          <h2 id="category-title" class="category__title">دسته‌بندی محصولات</h2>
+
+          <!-- دسکتاپ: نمایش به صورت گرید -->
+          <div class="category__grid" role="list">
+            <article class="category-card" role="listitem">
+              <div class="category-card__image">
+                <img
+                  src="./assets/image/Frame 1.png"
+                  alt="دسته‌بندی دکور خانه - انواع محصولات دکوری"
+                  loading="lazy"
+                  width="400"
+                  height="267"
+                />
+              </div>
+              <div class="category-card__title">دکور خانه</div>
+            </article>
+            <article class="category-card" role="listitem">
+              <div class="category-card__image">
+                <img
+                  src="./assets/image/Frame 2.png"
+                  alt="دسته‌بندی ایاس - محصولات متنوع"
+                  loading="lazy"
+                  width="400"
+                  height="267"
+                />
+              </div>
+              <div class="category-card__title">ایاس</div>
+            </article>
+            <article class="category-card" role="listitem">
+              <div class="category-card__image">
+                <img
+                  src="./assets/image/Frame 3.png"
+                  alt="دسته‌بندی لوازم تجری - لوازم تحریر و اداری"
+                  loading="lazy"
+                  width="400"
+                  height="267"
+                />
+              </div>
+              <div class="category-card__title">لوازم تجری</div>
+            </article>
+            <article class="category-card" role="listitem">
+              <div class="category-card__image">
+                <img
+                  src="./assets/image/Frame 4.png"
+                  alt="دسته‌بندی اکسسوری - اکسسوری های متنوع"
+                  loading="lazy"
+                  width="400"
+                  height="267"
+                />
+              </div>
+              <div class="category-card__title">اکسسوری</div>
+            </article>
+            <article class="category-card" role="listitem">
+              <div class="category-card__image">
+                <img
+                  src="./assets/image/Frame 5.png"
+                  alt="دسته‌بندی کارت تبریک - کارت های مناسبتی"
+                  loading="lazy"
+                  width="400"
+                  height="267"
+                />
+              </div>
+              <div class="category-card__title">کارت تبریک</div>
+            </article>
+            <article class="category-card" role="listitem">
+              <div class="category-card__image">
+                <img
+                  src="./assets/image/Frame 6.png"
+                  alt="دسته‌بندی قاب موبایل - قاب های متنوع برای گوشی"
+                  loading="lazy"
+                  width="400"
+                  height="267"
+                />
+              </div>
+              <div class="category-card__title">قاب موبایل</div>
+            </article>
+          </div>
+
+          <!-- موبایل و تبلت: اسلایدر -->
+          <div class="category__slider">
+            <div class="swiper category-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <article class="category-card">
+                    <div class="category-card__image">
+                      <img
+                        src="./assets/image/Frame 1.png"
+                        alt="دسته‌بندی دکور خانه - انواع محصولات دکوری"
+                        loading="lazy"
+                        width="400"
+                        height="267"
+                      />
+                    </div>
+                    <div class="category-card__title">دکور خانه</div>
+                  </article>
+                </div>
+                <div class="swiper-slide">
+                  <article class="category-card">
+                    <div class="category-card__image">
+                      <img
+                        src="./assets/image/Frame 2.png"
+                        alt="دسته‌بندی ایاس - محصولات متنوع"
+                        loading="lazy"
+                        width="400"
+                        height="267"
+                      />
+                    </div>
+                    <div class="category-card__title">ایاس</div>
+                  </article>
+                </div>
+                <div class="swiper-slide">
+                  <article class="category-card">
+                    <div class="category-card__image">
+                      <img
+                        src="./assets/image/Frame 3.png"
+                        alt="دسته‌بندی لوازم تجری - لوازم تحریر و اداری"
+                        loading="lazy"
+                        width="400"
+                        height="267"
+                      />
+                    </div>
+                    <div class="category-card__title">لوازم تجری</div>
+                  </article>
+                </div>
+                <div class="swiper-slide">
+                  <article class="category-card">
+                    <div class="category-card__image">
+                      <img
+                        src="./assets/image/Frame 4.png"
+                        alt="دسته‌بندی اکسسوری - اکسسوری های متنوع"
+                        loading="lazy"
+                        width="400"
+                        height="267"
+                      />
+                    </div>
+                    <div class="category-card__title">اکسسوری</div>
+                  </article>
+                </div>
+                <div class="swiper-slide">
+                  <article class="category-card">
+                    <div class="category-card__image">
+                      <img
+                        src="./assets/image/Frame 5.png"
+                        alt="دسته‌بندی کارت تبریک - کارت های مناسبتی"
+                        loading="lazy"
+                        width="400"
+                        height="267"
+                      />
+                    </div>
+                    <div class="category-card__title">کارت تبریک</div>
+                  </article>
+                </div>
+                <div class="swiper-slide">
+                  <article class="category-card">
+                    <div class="category-card__image">
+                      <img
+                        src="./assets/image/Frame 6.png"
+                        alt="دسته‌بندی قاب موبایل - قاب های متنوع برای گوشی"
+                        loading="lazy"
+                        width="400"
+                        height="267"
+                      />
+                    </div>
+                    <div class="category-card__title">قاب موبایل</div>
+                  </article>
+                </div>
+              </div>
+
+              <!-- دکمه‌های ناوبری -->
+              <div class="slider-nav">
+                <button
+                  class="slider-nav__btn slider-nav__btn--prev"
+                  aria-label="اسلاید قبلی"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M15 18l-6-6 6-6"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+                <button
+                  class="slider-nav__btn slider-nav__btn--next"
+                  aria-label="اسلاید بعدی"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M9 18l6-6-6-6"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
+
+      <!-- ============================================================
+      بخش پرفروش‌ترین محصولات
+      ============================================================ -->
+      <section class="products" aria-labelledby="products-title">
+        <header class="products__header">
+          <h2 id="products-title" class="products__title">پرفروش‌ترین ها</h2>
+          <a
+            href="#"
+            class="products__link"
+            aria-label="مشاهده همه محصولات پرفروش"
+            >مشاهده بیشتر</a
+          >
+        </header>
+
+        <div class="products__grid" role="list">
+          <!-- کارت اول -->
+          <article
+            class="product-card"
+            role="listitem"
+            data-product-id="product-1"
+          >
+            <div class="product-card__image">
+              <img
+                src="./assets/image/card-4.png"
+                alt="تیشرت زنانه - پرفروش ترین محصول"
+                loading="lazy"
+                width="400"
+                height="400"
+              />
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__title">تیشرت زنانه</h3>
+              <button
+                class="product-card__like"
+                aria-label="افزودن به علاقه‌مندی‌ها"
+                type="button"
+              >
+                <i class="ri-heart-line" aria-hidden="true"></i>
+              </button>
+              <p class="product-card__desc">دارای رنگ بندی، قابل طراحی</p>
+              <span class="product-card__price">تومان ۱۵۰,۰۰۰</span>
+            </div>
+          </article>
+
+          <!-- کارت دوم -->
+          <article
+            class="product-card"
+            role="listitem"
+            data-product-id="product-2"
+          >
+            <div class="product-card__image">
+              <img
+                src="./assets/image/card-2.png"
+                alt="قاب آیفون - پرفروش ترین محصول"
+                loading="lazy"
+                width="400"
+                height="400"
+              />
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__title">قاب آیفون</h3>
+              <button
+                class="product-card__like"
+                aria-label="افزودن به علاقه‌مندی‌ها"
+                type="button"
+              >
+                <i class="ri-heart-line" aria-hidden="true"></i>
+              </button>
+              <p class="product-card__desc">دارای رنگ بندی، قابل طراحی</p>
+              <span class="product-card__price">تومان ۱۵۰,۰۰۰</span>
+            </div>
+          </article>
+
+          <!-- کارت سوم -->
+          <article
+            class="product-card"
+            role="listitem"
+            data-product-id="product-3"
+          >
+            <div class="product-card__image">
+              <img
+                src="./assets/image/card-3.png"
+                alt="تیشرت مردانه - پرفروش ترین محصول"
+                loading="lazy"
+                width="400"
+                height="400"
+              />
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__title">تیشرت مردانه</h3>
+              <button
+                class="product-card__like"
+                aria-label="افزودن به علاقه‌مندی‌ها"
+                type="button"
+              >
+                <i class="ri-heart-line" aria-hidden="true"></i>
+              </button>
+              <p class="product-card__desc">دارای رنگ بندی، قابل طراحی</p>
+              <span class="product-card__price">تومان ۱۵۰,۰۰۰</span>
+            </div>
+          </article>
+
+          <!-- کارت چهارم -->
+          <article
+            class="product-card"
+            role="listitem"
+            data-product-id="product-4"
+          >
+            <div class="product-card__image">
+              <img
+                src="./assets/image/card-6.png"
+                alt="ماگ سرامیکی - پرفروش ترین محصول"
+                loading="lazy"
+                width="400"
+                height="400"
+              />
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__title">ماگ سرامیکی</h3>
+              <button
+                class="product-card__like"
+                aria-label="افزودن به علاقه‌مندی‌ها"
+                type="button"
+              >
+                <i class="ri-heart-line" aria-hidden="true"></i>
+              </button>
+              <p class="product-card__desc">دارای رنگ بندی، قابل طراحی</p>
+              <span class="product-card__price">تومان ۱۵۰,۰۰۰</span>
+            </div>
+          </article>
+
+          <!-- کارت پنجم -->
+          <article
+            class="product-card"
+            role="listitem"
+            data-product-id="product-5"
+          >
+            <div class="product-card__image">
+              <img
+                src="./assets/image/card-5.png"
+                alt="دفتر اداری - پرفروش ترین محصول"
+                loading="lazy"
+                width="400"
+                height="400"
+              />
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__title">دفتر اداری</h3>
+              <button
+                class="product-card__like"
+                aria-label="افزودن به علاقه‌مندی‌ها"
+                type="button"
+              >
+                <i class="ri-heart-line" aria-hidden="true"></i>
+              </button>
+              <p class="product-card__desc">دارای رنگ بندی، قابل طراحی</p>
+              <span class="product-card__price">تومان ۱۵۰,۰۰۰</span>
+            </div>
+          </article>
+
+          <!-- کارت ششم -->
+          <article
+            class="product-card"
+            role="listitem"
+            data-product-id="product-6"
+          >
+            <div class="product-card__image">
+              <img
+                src="./assets/image/card-8.png"
+                alt="کلاه مردانه - پرفروش ترین محصول"
+                loading="lazy"
+                width="400"
+                height="400"
+              />
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__title">کلاه مردانه</h3>
+              <button
+                class="product-card__like"
+                aria-label="افزودن به علاقه‌مندی‌ها"
+                type="button"
+              >
+                <i class="ri-heart-line" aria-hidden="true"></i>
+              </button>
+              <p class="product-card__desc">دارای رنگ بندی، قابل طراحی</p>
+              <span class="product-card__price">تومان ۱۵۰,۰۰۰</span>
+            </div>
+          </article>
+
+          <!-- کارت هفتم -->
+          <article
+            class="product-card"
+            role="listitem"
+            data-product-id="product-7"
+          >
+            <div class="product-card__image">
+              <img
+                src="./assets/image/card-7.png"
+                alt="کیف مردانه - پرفروش ترین محصول"
+                loading="lazy"
+                width="400"
+                height="400"
+              />
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__title">کیف مردانه</h3>
+              <button
+                class="product-card__like"
+                aria-label="افزودن به علاقه‌مندی‌ها"
+                type="button"
+              >
+                <i class="ri-heart-line" aria-hidden="true"></i>
+              </button>
+              <p class="product-card__desc">دارای رنگ بندی، قابل طراحی</p>
+              <span class="product-card__price">تومان ۱۵۰,۰۰۰</span>
+            </div>
+          </article>
+
+          <!-- کارت هشتم -->
+          <article
+            class="product-card"
+            role="listitem"
+            data-product-id="product-8"
+          >
+            <div class="product-card__image">
+              <img
+                src="./assets/image/card-9.png"
+                alt="استیکر - پرفروش ترین محصول"
+                loading="lazy"
+                width="400"
+                height="400"
+              />
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__title">استیکر</h3>
+              <button
+                class="product-card__like"
+                aria-label="افزودن به علاقه‌مندی‌ها"
+                type="button"
+              >
+                <i class="ri-heart-line" aria-hidden="true"></i>
+              </button>
+              <p class="product-card__desc">دارای رنگ بندی، قابل طراحی</p>
+              <span class="product-card__price">تومان ۱۵۰,۰۰۰</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!--  -->
+
+      <section class="container">
+        <!-- -------- فروش ویژه------- -->
+        <section class="vige-sale">
+          <div class="topic">
+            <!-- ---------- تاپیک فروش ویژه--------- -->
+            <div class="topic-two">
+              <img src="assets/image/vige-logo.png" alt="" />&nbsp;&nbsp;
+              <h3>فروش ویژه</h3>
+            </div>
+          </div>
+          <div class="vige-sale-card">
+            <!-- ---------کارت های فروش ویژه----------- -->
+            <div class="vige-home vige-card"></div>
+            <div class="vige-school vige-card"></div>
+            <div class="vige-pooshak vige-card"></div>
+            <div class="vige-digital vige-card"></div>
+            <div class="vige-sticker vige-card"></div>
+          </div>
+        </section>
+
+        <section class="portarafdar">
+          <div class="topic">
+            <div class="topic-two">
+              <img src="assets/image/portarafdar-logo.png" alt="" />&nbsp;&nbsp;
+              <h3>طرح های پرطرفدار</h3>
+            </div>
+            <a href="#">مشاهده بیشتر</a>
+          </div>
+          <div class="portarafdar-card-group" id="portarafdar-card-group">
+            <!-- <div class="portarafdar-card">
+                    <div class="portarafdar-card-img"><img src="assets/image/portarafdar-sticker-1.png" alt="">
+
+                    </div>
+                    <div class="portarafdar-card-info">
+                        <h4>استیکر</h4>
+                        <p>قابل طراحی و چاپ بر روی انواع محصولات</p>
+                        <button><img src="assets/image/portarafdar-gallery-add.png" alt="">افزودن به گالری</button>
+                    </div>
+                </div> -->
+          </div>
+        </section>
+      </section>
+
+      <!-- ===================
+      طراحان برتر
+      =====================-->
+
+      <div class="designer">
+        <div class="designer__title">
+          <h3 class="designer__top">طراحان برتر</h3>
+          <a href="#" class="designer__view">مشاهده بیشتر </a>
+        </div>
+        <div class="designer__container">
+          <!-- card One -->
+          <div class="designer__card">
+            <div class="designer__profile">
+              <img
+                src="./assets/image/photo-4.jpg"
+                alt="Profile"
+                class="designer__img"
+              />
+            </div>
+            <h3 class="designer__name">امیر یوسفی</h3>
+            <p class="designer__desc">دنبال کنندگان: 50</p>
+            <p class="designer__desc">تعداد طرح ها : 5</p>
+            <p class="designer__desc">آمار فروش : 10</p>
+
+            <a href="#" class="designer__sub">دنبال کردن</a>
+          </div>
+
+          <!-- card Two -->
+          <div class="designer__card">
+            <div class="designer__profile">
+              <img
+                src="./assets/image/photo-3.jpg"
+                alt="Profile"
+                class="designer__img"
+              />
+            </div>
+            <h3 class="designer__name">امیر علی صدقی</h3>
+            <p class="designer__desc">دنبال کنندگان: 50</p>
+            <p class="designer__desc">تعداد طرح ها : 5</p>
+            <p class="designer__desc">آمار فروش : 10</p>
+
+            <a href="#" class="designer__sub">دنبال کردن</a>
+          </div>
+
+          <!-- card Three -->
+          <div class="designer__card">
+            <div class="designer__profile">
+              <img
+                src="./assets/image/photo-2.jpg"
+                alt="Profile"
+                class="designer__img"
+              />
+            </div>
+            <h3 class="designer__name">حامد جعفری</h3>
+            <p class="designer__desc">دنبال کنندگان: 50</p>
+            <p class="designer__desc">تعداد طرح ها : 5</p>
+            <p class="designer__desc">آمار فروش : 10</p>
+
+            <a href="#" class="designer__sub">دنبال کردن</a>
+          </div>
+
+          <!-- card Four -->
+          <div class="designer__card">
+            <div class="designer__profile">
+              <img
+                src="./assets/image/photo-1.jpg"
+                alt="Profile"
+                class="designer__img"
+              />
+            </div>
+            <h3 class="designer__name">محسن سلمانی زاده</h3>
+            <p class="designer__desc">دنبال کنندگان: 50</p>
+            <p class="designer__desc">تعداد طرح ها : 5</p>
+            <p class="designer__desc">آمار فروش : 10</p>
+
+            <a href="#" class="designer__sub">دنبال کردن</a>
+          </div>
+        </div>
+
+        <div class="designer__products">
+          <div class="designer__product-gift">
+            <img
+              src="./assets/image/mom 1.png"
+              alt="gift"
+              class="desingner__img-gift"
+            />
+
+            <div class="designer__content-gift">
+              <h4 class="designer__gift-title">
+                محصولات مناسب هدیه دادن به خانم ها
+              </h4>
+              <a href="#" class="designer__gift-link">دیدن محصولات</a>
+            </div>
+          </div>
+          <div class="designer__product-gift">
+            <img
+              src="./assets/image/mom 2.png"
+              alt="gift"
+              class="desingner__img-gift"
+            />
+
+            <div class="designer__content-gift">
+              <h4 class="designer__gift-title">
+                محصولات مناسب هدیه دادن به خانم ها
+              </h4>
+              <a href="#" class="designer__gift-link">دیدن محصولات</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==========================================================
+         بخش ۱: جدیدترین طرح‌های هفته
+         ========================================================== -->
+      <section class="new-arrivals" aria-labelledby="new-arrivals-title">
+        <div class="new-arrivals__container">
+          <!-- هدر بخش -->
+          <header class="new-arrivals__header">
+            <h2 id="new-arrivals-title" class="new-arrivals__title">
+              جدیدترین طرح‌های هفته
+            </h2>
+
+            <div class="new-arrivals__header-actions">
+              <button
+                class="new-arrivals__wishlist-btn"
+                id="wishlistBtn"
+                aria-label="مشاهده علاقه‌مندی‌ها"
+              >
+                <i class="ri-heart-3-line"></i>
+                <span class="new-arrivals__wishlist-count" id="wishlistCount"
+                  >۰</span
+                >
+              </button>
+
+              <a href="#" class="new-arrivals__link">
+                <span>مشاهده بیشتر</span>
+                <i class="ri-arrow-left-s-line new-arrivals__link-icon"></i>
+              </a>
+            </div>
+          </header>
+
+          <!-- شبکه کارت‌ها -->
+          <div class="new-arrivals__grid" id="productGrid">
+            <!-- کارت معرفی -->
+            <article class="intro-card">
+              <p class="intro-card__text">
+                محصولاتی که طراحی<br />
+                شده رو ببینید و در صورت<br />
+                نیاز طرحشون رو مطابق<br />
+                سلیقه خودتون تغییر<br />
+                بدید
+              </p>
+              <div class="intro-card__images">
+                <img
+                  src="./assets/image/Group-1.png"
+                  alt="سبد خرید طرح یک"
+                  class="intro-card__image intro-card__image--lg"
+                  loading="lazy"
+                />
+                <img
+                  src="./assets/image/Group-2.png"
+                  alt="سبد خرید طرح دو"
+                  class="intro-card__image intro-card__image--sm"
+                  loading="lazy"
+                />
+              </div>
+            </article>
+
+            <!-- کارت محصولات -->
+            <article class="product-card" data-product-id="1">
+              <div class="product-card__image">
+                <img
+                  src="./assets/image/bag.png"
+                  alt="کیف زنانه چرمی قهوه‌ای"
+                  loading="lazy"
+                />
+              </div>
+              <div class="product-card__info">
+                <div class="product-card__description">
+                  <div class="product-card__name-row">
+                    <h3 class="product-card__title">کیف زنانه</h3>
+                    <button
+                      class="product-card__wishlist"
+                      type="button"
+                      aria-label="افزودن به علاقه‌مندی‌ها"
+                      data-product-id="1"
+                      data-product-name="کیف زنانه"
+                    >
+                      <i
+                        class="ri-heart-3-line product-card__wishlist-icon"
+                      ></i>
+                    </button>
+                  </div>
+                  <p class="product-card__desc">دارای رنگ بندی، قابل طراحی</p>
+                </div>
+                <div class="product-card__price">
+                  <span class="product-card__price-label">تومان</span>
+                  <span class="product-card__price-amount">۱۵۰,۰۰۰</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card" data-product-id="2">
+              <div class="product-card__image">
+                <img
+                  src="./assets/image/mug.png"
+                  alt="ماگ سفید قابل طراحی با دسته"
+                  loading="lazy"
+                />
+              </div>
+              <div class="product-card__info">
+                <div class="product-card__description">
+                  <div class="product-card__name-row">
+                    <h3 class="product-card__title">ماگ قابل طراحی</h3>
+                    <button
+                      class="product-card__wishlist"
+                      type="button"
+                      aria-label="افزودن به علاقه‌مندی‌ها"
+                      data-product-id="2"
+                      data-product-name="ماگ قابل طراحی"
+                    >
+                      <i
+                        class="ri-heart-3-line product-card__wishlist-icon"
+                      ></i>
+                    </button>
+                  </div>
+                  <p class="product-card__desc">دارای رنگ بندی، قابل طراحی</p>
+                </div>
+                <div class="product-card__price">
+                  <span class="product-card__price-label">تومان</span>
+                  <span class="product-card__price-amount">۱۵۰,۰۰۰</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card" data-product-id="3">
+              <div class="product-card__image">
+                <img
+                  src="./assets/image/product.png"
+                  alt="آباژور رومیزی با طرح هندسی"
+                  loading="lazy"
+                />
+              </div>
+              <div class="product-card__info">
+                <div class="product-card__description">
+                  <div class="product-card__name-row">
+                    <h3 class="product-card__title">آباژور</h3>
+                    <button
+                      class="product-card__wishlist"
+                      type="button"
+                      aria-label="افزودن به علاقه‌مندی‌ها"
+                      data-product-id="3"
+                      data-product-name="آباژور"
+                    >
+                      <i
+                        class="ri-heart-3-line product-card__wishlist-icon"
+                      ></i>
+                    </button>
+                  </div>
+                  <p class="product-card__desc">دارای رنگ بندی، قابل طراحی</p>
+                </div>
+                <div class="product-card__price">
+                  <span class="product-card__price-label">تومان</span>
+                  <span class="product-card__price-amount">۱۵۰,۰۰۰</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card" data-product-id="4">
+              <div class="product-card__image">
+                <img
+                  src="./assets/image/gift-bag.png"
+                  alt="ساک هدیه کاغذی با طرح گل"
+                  loading="lazy"
+                />
+              </div>
+              <div class="product-card__info">
+                <div class="product-card__description">
+                  <div class="product-card__name-row">
+                    <h3 class="product-card__title">ساک هدیه</h3>
+                    <button
+                      class="product-card__wishlist"
+                      type="button"
+                      aria-label="افزودن به علاقه‌مندی‌ها"
+                      data-product-id="4"
+                      data-product-name="ساک هدیه"
+                    >
+                      <i
+                        class="ri-heart-3-line product-card__wishlist-icon"
+                      ></i>
+                    </button>
+                  </div>
+                  <p class="product-card__desc">دارای رنگ بندی، قابل طراحی</p>
+                </div>
+                <div class="product-card__price">
+                  <span class="product-card__price-label">تومان</span>
+                  <span class="product-card__price-amount">۱۵۰,۰۰۰</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card" data-product-id="5">
+              <div class="product-card__image">
+                <img
+                  src="./assets/image/cushion.png"
+                  alt="کوسن مخمل طرح‌دار"
+                  loading="lazy"
+                />
+              </div>
+              <div class="product-card__info">
+                <div class="product-card__description">
+                  <div class="product-card__name-row">
+                    <h3 class="product-card__title">کوسن</h3>
+                    <button
+                      class="product-card__wishlist"
+                      type="button"
+                      aria-label="افزودن به علاقه‌مندی‌ها"
+                      data-product-id="5"
+                      data-product-name="کوسن"
+                    >
+                      <i
+                        class="ri-heart-3-line product-card__wishlist-icon"
+                      ></i>
+                    </button>
+                  </div>
+                  <p class="product-card__desc">دارای رنگ بندی، قابل طراحی</p>
+                </div>
+                <div class="product-card__price">
+                  <span class="product-card__price-label">تومان</span>
+                  <span class="product-card__price-amount">۱۵۰,۰۰۰</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card" data-product-id="6">
+              <div class="product-card__image">
+                <img
+                  src="./assets/image/tshirt.png"
+                  alt="تیشرت زنانه نخی سفید"
+                  loading="lazy"
+                />
+              </div>
+              <div class="product-card__info">
+                <div class="product-card__description">
+                  <div class="product-card__name-row">
+                    <h3 class="product-card__title">تیشرت زنانه</h3>
+                    <button
+                      class="product-card__wishlist"
+                      type="button"
+                      aria-label="افزودن به علاقه‌مندی‌ها"
+                      data-product-id="6"
+                      data-product-name="تیشرت زنانه"
+                    >
+                      <i
+                        class="ri-heart-3-line product-card__wishlist-icon"
+                      ></i>
+                    </button>
+                  </div>
+                  <p class="product-card__desc">دارای رنگ بندی، قابل طراحی</p>
+                </div>
+                <div class="product-card__price">
+                  <span class="product-card__price-label">تومان</span>
+                  <span class="product-card__price-amount">۱۵۰,۰۰۰</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card" data-product-id="7">
+              <div class="product-card__image">
+                <img
+                  src="./assets/image/luggage.png"
+                  alt="چمدان سخت‌بدنه طرح‌دار"
+                  loading="lazy"
+                />
+              </div>
+              <div class="product-card__info">
+                <div class="product-card__description">
+                  <div class="product-card__name-row">
+                    <h3 class="product-card__title">چمدان</h3>
+                    <button
+                      class="product-card__wishlist"
+                      type="button"
+                      aria-label="افزودن به علاقه‌مندی‌ها"
+                      data-product-id="7"
+                      data-product-name="چمدان"
+                    >
+                      <i
+                        class="ri-heart-3-line product-card__wishlist-icon"
+                      ></i>
+                    </button>
+                  </div>
+                  <p class="product-card__desc">دارای رنگ بندی، قابل طراحی</p>
+                </div>
+                <div class="product-card__price">
+                  <span class="product-card__price-label">تومان</span>
+                  <span class="product-card__price-amount">۱۵۰,۰۰۰</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================================
+         بخش ۲: پروموشن کارت دعوت عروسی
+         ========================================================== -->
+      <section class="wedding-promo" aria-labelledby="wedding-promo-title">
+        <div class="wedding-promo__container">
+          <div class="wedding-promo__gallery">
+            <div class="wedding-promo__col">
+              <img
+                class="wedding-promo__img wedding__grid-three"
+                src="./assets/image/cake wedding.png"
+                alt="شمع تزیینی روی میز عروسی"
+                loading="lazy"
+              />
+              <img
+                class="wedding-promo__img wedding-promo__img--tall wedding__grid-one"
+                src="./assets/image/wedding table.png"
+                alt="لیوان شرابی با شمع روشن"
+                loading="lazy"
+              />
+              <img
+                class="wedding-promo__img wedding__grid-two"
+                src="./assets/image/wedding stand.png"
+                alt="گل‌آرایی میز عروسی با گل‌های سفید"
+                loading="lazy"
+              />
+              <img
+                class="wedding-promo__img wedding__grid-four"
+                src="./assets/image/Frame flower.png"
+                alt="کارت دعوت عروسی با گل‌آرایی"
+                loading="lazy"
+              />
+              <img
+                class="wedding-promo__img wedding__grid-five"
+                src="./assets/image/wedding red table.png"
+                alt="چیدمان میز عروسی با تم قرمز"
+                loading="lazy"
+              />
+              <img
+                class="wedding-promo__img wedding-promo__img--tall wedding__grid-six"
+                src="./assets/image/wedding-bride.png"
+                alt="عروس با لباس سفید و گل در دست"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <h3 id="wedding-promo-title" class="wedding-promo__title">
+            کارت عروسی رو خودتون طراحی کنید
+          </h3>
+          <a href="#" class="wedding-promo__btn">
+            <span>شروع طراحی</span>
+            <i class="ri-edit-2-line wedding-promo__btn-icon"></i>
+          </a>
+        </div>
+      </section>
+
+      <!-- ==========================================================
+         مودال علاقه‌مندی‌ها (پاپ‌آپ مدرن)
+         ========================================================== -->
+      <div class="wishlist-modal" id="wishlistModal">
+        <div class="wishlist-modal__overlay"></div>
+        <div class="wishlist-modal__content">
+          <div class="wishlist-modal__header">
+            <h2 class="wishlist-modal__title">
+              <i
+                class="ri-heart-3-fill"
+                style="color: var(--color-primary)"
+              ></i>
+              علاقه‌مندی‌های من
+            </h2>
+            <button
+              class="wishlist-modal__close"
+              id="closeWishlist"
+              aria-label="بستن"
+            >
+              <i class="ri-close-line"></i>
+            </button>
+          </div>
+          <div class="wishlist-modal__body" id="wishlistBody">
+            <div class="wishlist-modal__empty">
+              <i
+                class="ri-heart-3-line"
+                style="font-size: 48px; color: var(--color-gray-5)"
+              ></i>
+              <p>هنوز محصولی به علاقه‌مندی‌ها اضافه نشده است</p>
+            </div>
+          </div>
+          <div class="wishlist-modal__footer">
+            <button class="wishlist-modal__clear-all" id="clearAllWishlist">
+              <i class="ri-delete-bin-2-line"></i> حذف همه
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==========================================================
+         نوتیفیکیشن با پس‌زمینه تیره و انیمیشن
+         ========================================================== -->
+      <div class="notification-overlay" id="notificationOverlay">
+        <div class="notification-wrapper" id="notificationWrapper">
+          <div class="notification-icon">
+            <i class="ri-checkbox-circle-fill"></i>
+          </div>
+          <div class="notification-content">
+            <div class="notification-title" id="notificationTitle">
+              افزوده شد!
+            </div>
+            <div class="notification-text" id="notificationText">
+              محصول به علاقه‌مندی‌ها اضافه شد
+            </div>
+          </div>
+          <div class="notification-progress" id="notificationProgress"></div>
+        </div>
+      </div>
+
+      <!--  علاقه مندی ها -->
+      <section class="container">
+        <section class="favorite">
+          <div class="topic">
+            <!-- --------تاپیک علاقه مندی ها--------- -->
+            <div class="topic-two">
+              <img src="assets/image/favorite-logo.png" alt="" />
+              &nbsp;&nbsp;
+              <h3>علاقه مندی ها</h3>
+            </div>
+          </div>
+
+          <div class="favorite-card-group" id="favorite-card-group">
+            <!-- کارت علاقه مندی ها اینجا قرار میگیرد -->
+
+            <!--
+            <div class="favorite-card">
+                <div class="favorite-card-img">
+                    <img src="assets/image/favorite-bag.png" alt="">
+                </div>
+
+                <div class="favorite-card-info">
+                    <h4>
+                        کیف زنانه
+                        <img src="assets/image/favorite-like.png" alt="">
+                    </h4>
+
+                    <p>دارای رنگ بندی و قابل طراحی</p>
+
+                    <p class="favorite-price">
+                        150,000 تومان
+                    </p>
+                </div>
+            </div>
+            -->
+          </div>
+        </section>
+      </section>
     </main>
-    <!-- Javascript -->
-    <script src="./src/app.js"></script>
+
+    <div id="footer"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/include.js"></script>
   </body>
 </html>

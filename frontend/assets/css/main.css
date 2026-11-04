@@ -1,0 +1,2960 @@
+/*  Start Style Info */
+
+main {
+  display: block !important;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+
+.info {
+  background: var(--color-primary-tint-3);
+  margin: 2rem;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  max-width: 1224px;
+}
+
+.info__text,
+.info__actions {
+  flex-basis: 50%;
+}
+
+.info__img {
+  display: block;
+  width: 400px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.info__title {
+  font-size: 1rem;
+  text-align: center;
+  margin-block: 1rem;
+  color: var(--text-color-primary);
+  font-weight: 500;
+}
+
+.info__desc {
+  color: var(--text-color-primary);
+  line-height: 2rem;
+  font-size: 1.1rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+.info__actions {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+}
+
+.info__link {
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+}
+
+.info__link:nth-child(1) {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+/*  Responsive Section Info */
+
+@media screen and (min-width: 320px) and (max-width: 575px) {
+  .info {
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info__text,
+  .info__actions {
+    flex-basis: auto;
+    width: 100%;
+  }
+
+  .info__img {
+    width: min(100%, 280px);
+    margin-bottom: 1rem;
+  }
+
+  .info__title {
+    font-size: 1rem;
+    margin-block: 0.75rem;
+  }
+
+  .info__desc {
+    font-size: 0.95rem;
+    line-height: 1.75rem;
+    text-align: center;
+    margin-bottom: 1.25rem;
+  }
+
+  .info__actions {
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: stretch;
+  }
+
+  .info__link {
+    display: block;
+    text-align: center;
+    padding: 0.8rem 1rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .info__img {
+    width: 500px;
+  }
+
+  .info__desc {
+    text-align: center;
+  }
+  .info__link {
+    padding: 15px 24px;
+  }
+  .info__actions {
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .info__img {
+    width: 700px;
+  }
+  .info__desc {
+    font-size: 2rem;
+    line-height: 3.5rem;
+  }
+  .info__link {
+    padding: 15px 24px;
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .info {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 3rem;
+  }
+  .info__img {
+    width: 500px;
+  }
+  .info__title {
+    text-align: right;
+    font-size: 2.5rem;
+  }
+  .info__desc {
+    text-align: right;
+    font-size: 1.7rem;
+  }
+
+  .info__link {
+    font-size: 1.5rem;
+    padding: 15px 24px;
+  }
+
+  .info__actions {
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .info {
+    margin: 0 auto;
+    height: 400px;
+  }
+  .info__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .info__desc {
+    font-size: 2rem;
+  }
+
+  .info__actions {
+    justify-content: flex-start;
+  }
+
+  .info__img {
+    width: 650px;
+  }
+}
+
+.dark-mode body {
+  background: var(--color-gray-1);
+  color: var(--color-gray-10);
+}
+
+/* کارت‌های دسته‌بندی */
+.dark-mode .category-card {
+  background: var(--color-gray-2);
+  border-color: var(--color-gray-3);
+}
+
+.dark-mode .category-card__title {
+  color: var(--color-gray-10);
+}
+
+/* کارت‌های محصول */
+.dark-mode .product-card {
+  background: var(--color-gray-2);
+  border-color: var(--color-gray-3);
+}
+
+.dark-mode .product-card__title {
+  color: var(--color-gray-10);
+}
+
+.dark-mode .product-card__desc {
+  color: var(--color-gray-6);
+}
+
+.dark-mode .product-card__price {
+  color: var(--color-gray-10);
+}
+
+/* عنوان‌ها */
+.dark-mode .category__title,
+.dark-mode .products__title {
+  color: var(--color-gray-10);
+}
+
+/* لینک "مشاهده بیشتر" */
+.dark-mode .products__link {
+  color: var(--color-primary);
+  border-bottom-color: var(--color-primary);
+}
+
+/* دکمه‌های اسلایدر */
+.dark-mode .slider-nav__btn {
+  background: rgba(30, 30, 30, 0.8);
+  border-color: rgba(167, 47, 59, 0.3);
+  color: var(--color-primary);
+}
+
+.dark-mode .slider-nav__btn:hover {
+  background: var(--color-primary);
+  color: var(--color-gray-10);
+}
+
+/* اسلاید فعال */
+.dark-mode .swiper-slide-active .category-card {
+  border-color: var(--color-primary);
+  box-shadow: 0 8px 24px rgba(167, 47, 59, 0.3);
+}
+
+/* دکمه لایک */
+.dark-mode .product-card__like {
+  color: var(--color-gray-6);
+}
+
+.dark-mode .product-card__like:hover {
+  color: var(--color-primary);
+}
+
+/* دکمه اسکرول به بالا */
+.dark-mode .scroll-to-top {
+  background: var(--color-primary);
+  color: var(--color-gray-10);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* تصاویر کارت‌ها (پس‌زمینه) */
+.dark-mode .category-card__image,
+.dark-mode .product-card__image {
+  background: var(--color-gray-3);
+}
+
+/* ============================================================
+   هاور و اکتیو
+   ============================================================ */
+
+/* هاور دسکتاپ */
+@media (hover: hover) {
+  .theme-toggle:hover {
+    transform: scale(1.12);
+    box-shadow: 0 6px 30px rgba(167, 47, 59, 0.35);
+  }
+
+  .dark-mode .theme-toggle:hover {
+    box-shadow: 0 6px 30px rgba(167, 47, 59, 0.25);
+  }
+
+  .theme-toggle:hover .theme-toggle__icon {
+    animation: iconPulse 0.6s ease;
+  }
+}
+
+/* اکتیو (کلیک) */
+.theme-toggle:active {
+  transform: scale(0.88);
+}
+
+/* فوکوس */
+.theme-toggle:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 4px;
+}
+
+/* ============================================================
+   انیمیشن‌ها
+   ============================================================ */
+
+@keyframes iconPulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* انیمیشن چرخش کامل هنگام تغییر حالت */
+.theme-toggle.changing .theme-toggle__icon--sun {
+  animation: sunSpin 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.theme-toggle.changing .theme-toggle__icon--moon {
+  animation: moonSpin 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes sunSpin {
+  0% {
+    transform: rotate(0deg) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(180deg) scale(0);
+    opacity: 0;
+  }
+}
+
+@keyframes moonSpin {
+  0% {
+    transform: rotate(-90deg) scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+    opacity: 1;
+  }
+}
+
+/* ============================================================
+   ریسپانسیو
+   ============================================================ */
+
+@media (max-width: 640px) {
+  .theme-toggle {
+    bottom: 20px;
+    left: 20px;
+    width: 48px;
+    height: 48px;
+  }
+
+  .theme-toggle__icon {
+    font-size: 24px;
+  }
+
+  .theme-toggle__icon-wrapper {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .theme-toggle {
+    bottom: 16px;
+    left: 16px;
+    width: 44px;
+    height: 44px;
+  }
+
+  .theme-toggle__icon {
+    font-size: 20px;
+  }
+
+  .theme-toggle__icon-wrapper {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* ============================================================
+   کانتینر اصلی
+   ============================================================ */
+.category {
+  width: 100%;
+}
+
+.category__container {
+  max-width: 1224px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* ============================================================
+   عنوان بخش
+   ============================================================ */
+.category__title {
+  font-size: var(--fs-h4);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-gray-10);
+  margin-bottom: 28px;
+  text-align: center;
+  letter-spacing: 0.3px;
+  margin-top: 2rem;
+}
+
+/* ============================================================
+   کارت دسته‌بندی (مشترک)
+   ============================================================ */
+.category-card {
+  background: var(--color-primary-tint-1);
+  border: 1px solid var(--color-gray-3);
+  border-radius: var(--radius);
+  overflow: hidden;
+  cursor: pointer;
+  transition:
+    transform var(--transition),
+    box-shadow var(--transition),
+    border-color var(--transition);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  will-change: transform;
+  backface-visibility: hidden;
+}
+
+.category-card__image {
+  width: 100%;
+  padding-top: 66.66%;
+  position: relative;
+  background: var(--color-gray-2);
+  overflow: hidden;
+}
+
+.category-card__image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.category-card__title {
+  padding: 16px 10px 18px;
+  text-align: center;
+  font-size: var(--fs-body-4);
+  font-weight: var(--font-weight-regular);
+  color: var(--color-gray-10);
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.2px;
+}
+
+/* هاور دسکتاپ */
+@media (hover: hover) {
+  .category-card:hover {
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.1);
+    border-color: var(--color-primary);
+  }
+}
+
+/* ============================================================
+   دسکتاپ: نمایش گرید
+   ============================================================ */
+.category__grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 14px;
+  display: none;
+}
+
+/* ============================================================
+   موبایل و تبلت: اسلایدر
+   ============================================================ */
+.category__slider {
+  display: block;
+}
+
+/* ============================================================
+   سوییپر
+   ============================================================ */
+.category-swiper {
+  width: 100%;
+  padding: 10px 0 20px;
+  overflow: hidden;
+  direction: rtl;
+  position: relative;
+}
+
+.category-swiper .swiper-wrapper {
+  align-items: stretch;
+  padding: 0 10px;
+}
+
+.category-swiper .swiper-slide {
+  height: auto;
+  display: flex;
+  padding: 0 7px;
+}
+
+/* اسلاید فعال */
+.swiper-slide-active .category-card {
+  border-color: var(--color-primary);
+  box-shadow: 0 8px 24px rgba(167, 47, 59, 0.15);
+  transform: scale(1.01);
+}
+
+/* ============================================================
+   دکمه‌های ناوبری
+   ============================================================ */
+.slider-nav {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  pointer-events: none;
+  padding: 0 16px;
+  z-index: 10;
+}
+
+.slider-nav__btn {
+  pointer-events: auto;
+  width: 28px;
+  height: 28px;
+  min-width: 24px;
+  min-height: 24px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(167, 47, 59, 0.1);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s ease;
+  color: var(--color-primary);
+  touch-action: manipulation;
+  position: relative;
+}
+
+.slider-nav__btn svg {
+  width: 10px;
+  height: 10px;
+  stroke: currentColor;
+  stroke-width: 2.5;
+  fill: none;
+  transition: transform 0.25s ease;
+}
+
+/* هاور دکمه‌ها */
+.slider-nav__btn:hover {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: var(--color-primary-tint-1);
+  box-shadow: 0 4px 16px rgba(167, 47, 59, 0.2);
+  transform: scale(1.1);
+}
+
+.slider-nav__btn:hover svg {
+  stroke: var(--color-primary-tint-1);
+}
+
+/* فوکوس */
+.slider-nav__btn:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* اکتیو (کلیک) */
+.slider-nav__btn:active {
+  transform: scale(0.88);
+  background: var(--color-primary-shade-6);
+}
+
+/* غیرفعال کردن دکمه‌ها */
+.slider-nav__btn.swiper-button-disabled {
+  opacity: 0.2;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.slider-nav__btn.swiper-button-disabled:hover {
+  background: rgba(255, 255, 255, 0.7);
+  color: var(--color-primary);
+  transform: none;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+/* RTL */
+[dir="rtl"] .slider-nav__btn--prev svg {
+  transform: scaleX(-1);
+}
+
+[dir="rtl"] .slider-nav__btn--next svg {
+  transform: scaleX(-1);
+}
+
+/* ============================================================
+   بخش محصولات (پرفروش ترین ها) - BEM
+   ============================================================ */
+
+.products {
+  max-width: 1224px;
+  margin: 40px auto 0;
+  padding: 0 16px;
+}
+
+.products__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.products__title {
+  font-size: var(--fs-h4);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-gray-10);
+}
+
+.products__link {
+  font-size: var(--fs-body-4);
+  font-weight: var(--font-weight-regular);
+  color: var(--color-primary);
+  text-decoration: none;
+  border-bottom: 2px solid var(--color-primary);
+  padding-bottom: 4px;
+  transition: var(--transition);
+}
+
+.products__link:hover {
+  color: var(--color-primary-shade-6);
+  border-bottom-color: var(--color-primary-shade-6);
+}
+
+.products__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+/* ============================================================
+   کارت محصول - BEM
+   ============================================================ */
+
+.product-card {
+  background: var(--color-primary-tint-1);
+  border: 1px solid var(--color-gray-3);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition:
+    transform var(--transition),
+    box-shadow var(--transition),
+    opacity 0.6s ease,
+    border-color 0.3s ease;
+  transform-style: preserve-3d;
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+  position: relative;
+  cursor: pointer;
+
+  /* انیمیشن ظهور */
+  opacity: 0;
+  transform: scale(0.85) translateY(40px);
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow);
+}
+
+.product-card--visible {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+}
+
+/* تاخیر برای هر کارت */
+.product-card:nth-child(1) {
+  transition-delay: 0.05s;
+}
+.product-card:nth-child(2) {
+  transition-delay: 0.1s;
+}
+.product-card:nth-child(3) {
+  transition-delay: 0.15s;
+}
+.product-card:nth-child(4) {
+  transition-delay: 0.2s;
+}
+.product-card:nth-child(5) {
+  transition-delay: 0.25s;
+}
+.product-card:nth-child(6) {
+  transition-delay: 0.3s;
+}
+.product-card:nth-child(7) {
+  transition-delay: 0.35s;
+}
+.product-card:nth-child(8) {
+  transition-delay: 0.4s;
+}
+.product-card:nth-child(9) {
+  transition-delay: 0.45s;
+}
+.product-card:nth-child(10) {
+  transition-delay: 0.5s;
+}
+.product-card:nth-child(11) {
+  transition-delay: 0.55s;
+}
+.product-card:nth-child(12) {
+  transition-delay: 0.6s;
+}
+
+.product-card__image {
+  width: 100%;
+  padding-top: 100%;
+  position: relative;
+  background: var(--color-gray-2);
+  overflow: hidden;
+  transform-style: preserve-3d;
+  transition: transform 0.3s ease;
+  will-change: transform;
+}
+
+.product-card__image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-card__info {
+  padding: 12px 14px 16px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.3s ease;
+  will-change: transform;
+}
+
+.product-card__title {
+  font-size: var(--fs-body-4);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-gray-10);
+  margin-bottom: 2px;
+  position: relative;
+  display: inline-block;
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
+  will-change: transform;
+}
+
+/* خط زیر عنوان هنگام هاور */
+.product-card__title::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background: var(--color-primary);
+  transition: width 0.3s ease;
+}
+
+.product-card:hover .product-card__title::after {
+  width: 100%;
+}
+
+.product-card__like {
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  top: 8px;
+  left: 8px;
+  margin: 0;
+  padding: 4px;
+  color: var(--color-gray-7);
+  cursor: pointer;
+  transition:
+    color var(--transition),
+    transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  background: none;
+  border: none;
+  font-size: 0;
+  border-radius: 50%;
+  min-width: 32px;
+  min-height: 32px;
+  will-change: transform;
+}
+
+.product-card__like i {
+  font-size: 1.5rem;
+}
+
+.product-card__like:hover {
+  color: var(--color-primary);
+}
+
+.product-card__like:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.product-card:hover .product-card__like {
+  transform: scale(1.1);
+}
+
+.product-card__desc {
+  font-size: var(--fs-body-5);
+  color: var(--color-gray-7);
+  margin-bottom: 8px;
+  line-height: var(--line-height-body);
+}
+
+.product-card__price {
+  font-size: var(--fs-body-4);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-gray-10);
+  transition: all 0.3s ease;
+  will-change: transform;
+}
+
+.product-card:hover .product-card__price {
+  color: var(--color-primary);
+}
+
+/* ============================================================
+   کاهش حرکت
+   ============================================================ */
+@media (prefers-reduced-motion: reduce) {
+  .product-card {
+    animation: none !important;
+    transition: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .product-card--visible {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+/* ============================================================
+   ریسپانسیو
+   ============================================================ */
+
+/* تبلت و موبایل: اسلایدر فعال، گرید مخفی */
+@media (max-width: 1024px) {
+  .category__grid {
+    display: none !important;
+  }
+  .category__slider {
+    display: block !important;
+  }
+}
+
+/* دسکتاپ: گرید نمایش، اسلایدر مخفی */
+@media (min-width: 1025px) {
+  .category__grid {
+    display: grid !important;
+  }
+  .category__slider {
+    display: none !important;
+  }
+}
+
+/* موبایل کوچک: ۱ کارت */
+@media (max-width: 480px) {
+  .category-swiper .swiper-slide {
+    width: calc(100% - 14px) !important;
+  }
+  .category-card__title {
+    font-size: var(--fs-body-5);
+    padding: 12px 6px 14px;
+  }
+  .category__title {
+    font-size: var(--fs-h5);
+  }
+  .slider-nav {
+    padding: 0 8px;
+  }
+  .slider-nav__btn {
+    width: 22px;
+    height: 22px;
+    min-width: 20px;
+    min-height: 20px;
+  }
+  .slider-nav__btn svg {
+    width: 10px;
+    height: 10px;
+    stroke-width: 2.5;
+  }
+}
+
+/* موبایل بزرگ: ۱ کارت */
+@media (min-width: 481px) and (max-width: 640px) {
+  .category-swiper .swiper-slide {
+    width: calc(100% - 14px) !important;
+  }
+  .slider-nav {
+    padding: 0 10px;
+  }
+  .slider-nav__btn {
+    width: 24px;
+    height: 24px;
+    min-width: 22px;
+    min-height: 22px;
+  }
+  .slider-nav__btn svg {
+    width: 11px;
+    height: 11px;
+  }
+}
+
+/* تبلت: ۲ کارت */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .category-swiper .swiper-slide {
+    width: calc(50% - 14px) !important;
+  }
+  .slider-nav {
+    padding: 0 12px;
+  }
+  .slider-nav__btn {
+    width: 26px;
+    height: 26px;
+    min-width: 24px;
+    min-height: 24px;
+  }
+  .slider-nav__btn svg {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+/* ریسپانسیو بخش محصولات */
+@media (max-width: 640px) {
+  .products__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .products__title {
+    font-size: var(--fs-h5);
+  }
+
+  .products__link {
+    font-size: var(--fs-body-5);
+  }
+
+  .product-card__title {
+    font-size: var(--fs-body-5);
+  }
+
+  .product-card__price {
+    font-size: var(--fs-body-5);
+  }
+
+  .product-card__desc {
+    font-size: 10px;
+  }
+
+  .product-card__info {
+    padding: 8px 10px 12px;
+  }
+
+  .product-card__like i {
+    font-size: 1.2rem;
+  }
+
+  .product-card__like {
+    min-width: 28px;
+    min-height: 28px;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .products__grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .products__grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+  }
+}
+
+/* ============================================================
+   دسترسی‌پذیری
+   ============================================================ */
+.category-card:focus-visible,
+.product-card:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/*=============================================== 
+
+
+==============================================*/
+
+.container {
+  height: 100%;
+  margin: 0 auto;
+}
+
+/* فروش ویژه */
+.vige-sale {
+  margin-block: 30px;
+  box-sizing: border-box;
+}
+div.topic {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 15px;
+}
+
+@media (max-width: 991px) {
+  .vige-sale {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  div.topic {
+    padding-inline: 16px;
+  }
+
+  .vige-sale-card {
+    padding-inline: 16px;
+  }
+}
+.topic a {
+  text-decoration: none;
+  color: var(--color-primary-shade-7);
+  font-size: var(--fs-body-2);
+  display: none;
+}
+.topic-two {
+  display: flex;
+}
+div.topic img {
+  height: 55px;
+  display: none;
+}
+
+h3 {
+  font-family: var(--font-primary);
+  font-size: var(--fs-h3);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-heading);
+}
+
+.vige-sale-card {
+  width: 100%;
+  display: grid;
+  gap: 12px;
+  box-sizing: border-box;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: minmax(140px, 2fr) minmax(100px, 2fr) minmax(100px, 2fr);
+  grid-template-areas:
+    "home home"
+    "home home"
+    "school pooshak"
+    "digital sticker";
+  overflow-x: hidden;
+}
+
+.vige-card {
+  min-height: 169px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.vige-home {
+  background-image: url(../image/vige-home.png);
+  grid-area: home;
+  /* border-radius: 7.5px;
+    -webkit-border-radius: 7.5px;
+    -moz-border-radius: 7.5px;
+    -ms-border-radius: 7.5px;
+    -o-border-radius: 7.5px; */
+}
+
+.vige-school {
+  background-image: url(../image/vige-school.png);
+  grid-area: school;
+}
+
+.vige-pooshak {
+  background-image: url(../image/vige-pooshak.png);
+  grid-area: pooshak;
+}
+
+.vige-digital {
+  background-image: url(../image/vige-digital.png);
+  grid-area: digital;
+}
+
+.vige-sticker {
+  background-image: url(../image/vige-sticker.png);
+  grid-area: sticker;
+}
+
+.portarafdar-card-group {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 15px;
+  flex-wrap: wrap;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.portarafdar-card {
+  min-width: 0;
+  border: 2px solid rgb(214, 213, 213);
+  border-radius: 24px;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  -ms-border-radius: 24px;
+  -o-border-radius: 24px;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+.portarafdar-card:hover {
+  transform: translateY(-4px);
+  -webkit-transform: translateY(-4px);
+  -moz-transform: translateY(-4px);
+  -ms-transform: translateY(-4px);
+  -o-transform: translateY(-4px);
+  border: 2px solid rgb(123, 122, 122);
+}
+div.portarafdar-card-img {
+  width: 80%;
+  margin: 15px 10% 10px;
+}
+div.portarafdar-card-img img {
+  width: 100%;
+}
+
+div.portarafdar-card-info {
+  width: 85%;
+  margin: 0px 7.5% 15px;
+}
+div.portarafdar-card-info h4 {
+  font-size: var(--fs-h5);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-heading);
+}
+div.portarafdar-card-info p {
+  font-size: var(--fs-body-3);
+}
+div.portarafdar-card-info button {
+  padding: 4px 6px;
+  margin-top: 5px;
+  width: 100%;
+  font-size: var(--fs-body-3);
+  color: var(--color-primary);
+  background: transparent;
+  border: 2px solid var(--color-primary);
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+  cursor: pointer;
+}
+div.portarafdar-card-info button:hover {
+  border-radius: 50px;
+  box-shadow: 2px 2px 2px var(--color-primary);
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+div.portarafdar-card-info button:focus {
+  background-color: var(--color-primary-tint-5);
+}
+
+div.portarafdar-card-info button img {
+  height: 23px;
+}
+
+@media screen and (min-width: 768px) {
+  .portarafdar-card-group {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 992px) {
+  .topic a {
+    display: block;
+  }
+  div.topic img {
+    display: block;
+  }
+  h3 {
+    font-size: 3rem;
+    font-weight: 500;
+  }
+  .vige-sale {
+    width: 1224px;
+    margin-inline: auto;
+  }
+
+  .vige-sale-card {
+    width: 100%;
+    height: 576px;
+    gap: 20px;
+    padding-inline: 0;
+    grid-template-columns: repeat(4, 2fr);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "home home school pooshak" "home home digital sticker";
+  }
+
+  .vige-card {
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+  }
+
+  .portarafdar {
+    width: 100٪;
+    max-width: 1224px;
+    margin-inline: auto;
+    .portarafdar-card-group {
+      grid-template-columns: repeat(3, 1fr);
+
+      .portarafdar-card {
+        margin-block: 10px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .portarafdar {
+    .portarafdar-card-group {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}
+
+/* ==========================  
+
+استایل قسمت طراحان برتر
+
+ ===========================*/
+
+.designer {
+  max-width: 1224px;
+  margin: 0 auto;
+}
+
+.designer__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem;
+}
+
+.designer__view {
+  color: var(--color-primary-shade-7);
+  font-size: 1.5rem;
+}
+
+.designer__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.designer__card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -120%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.45),
+    transparent
+  );
+  transition: 0.8s;
+}
+
+.designer__card:hover::before {
+  left: 170%;
+}
+.designer__card {
+  background: url("../image/Rectangle\ 944.png") no-repeat top / contain;
+  margin: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  border-radius: 1rem;
+  border: 1px solid var(--text-color-primary);
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(70px);
+  transition:
+    opacity 0.8s,
+    transform 0.8s;
+}
+
+.designer__card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.designer__profile {
+  position: relative;
+}
+
+.designer__img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: block;
+  position: relative;
+  top: 2rem;
+  margin-bottom: 3rem;
+}
+.designer__name {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.designer__sub {
+  margin-block: 2rem;
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
+  border-radius: 1rem;
+  padding: 8px 24px;
+  width: 90%;
+  transition: all 0.4s;
+}
+
+.designer__sub:hover {
+  background: var(--color-primary);
+  color: #fff;
+  transition: 0.4s;
+}
+
+.designer__sub.active {
+  background: var(--color-primary);
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/*  ریسپانسیو طراحان برتر */
+
+@media screen and (min-width: 768px) {
+  .designer__container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .designer__name {
+    font-size: 2rem;
+  }
+  .designer__desc {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  .designer__sub {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .designer__container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .designer__container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .designer__view {
+    font-size: 2rem;
+  }
+}
+
+/* ========  
+بخش محصولات هدیه
+=========*/
+
+.designer__product-gift {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 1.5rem;
+  background: var(--color-primary-tint-3);
+  border-radius: 1rem;
+}
+.designer__content-gift {
+  padding: 1rem;
+}
+.desingner__img-gift {
+  width: 300px;
+}
+.designer__gift-title {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+.designer__gift-link {
+  color: var(--color-primary-shade-7);
+  text-align: center;
+  display: block;
+}
+
+/*  ریسپانسیو بخش محصولات هدیه */
+
+@media screen and (min-width: 575px) {
+  .designer__gift-title {
+    font-size: 1.7rem;
+  }
+  .designer__gift-link {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 468px) {
+  .designer__products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .desingner__img-gift {
+    width: 267px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .designer__products {
+    flex-direction: row;
+  }
+  .designer__gift-title {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  .designer__gift-link {
+    font-size: 1.7rem;
+    text-align: right;
+    border: 2px solid var(--color-primary);
+    display: inline-block;
+    padding: 8px 24px;
+    border-radius: 0.8rem;
+  }
+  .designer__content-gift {
+    padding: 1.5rem;
+  }
+}
+/* ==========================================================ذ
+بخش ۱: جدیدترین طرح‌های هفته
+   ========================================================== */
+
+.new-arrivals {
+  margin-top: 3rem;
+}
+.new-arrivals {
+  width: 100%;
+  padding: 20px 0 40px;
+}
+
+.new-arrivals__container {
+  width: 1224px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* هدر بخش */
+.new-arrivals__header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.new-arrivals__header-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.new-arrivals__title {
+  font-size: var(--fs-h6);
+  color: var(--color-gray-10);
+  transition: color 0.3s ease;
+}
+.new-arrivals__title:hover {
+  color: var(--color-primary);
+}
+
+.new-arrivals__wishlist-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--color-white);
+  border: 1px solid var(--color-gray-3);
+  border-radius: 12px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 20px;
+  color: var(--color-gray-7);
+}
+.new-arrivals__wishlist-btn:hover {
+  border-color: var(--color-primary);
+  background: var(--color-primary-tint-2);
+  color: var(--color-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(167, 47, 59, 0.15);
+}
+
+.new-arrivals__wishlist-count {
+  font-size: var(--fs-body-4);
+  font-weight: var(--font-weight-bold);
+  color: #fff;
+  background: var(--color-primary);
+  padding: 2px 8px;
+  border-radius: 10px;
+  min-width: 24px;
+  text-align: center;
+}
+
+.new-arrivals__link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--color-primary);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--fs-body-4);
+  padding: 8px 16px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  background: var(--color-white);
+  border: 1px solid var(--color-gray-3);
+}
+.new-arrivals__link:hover {
+  color: var(--color-primary-shade-7);
+  background: var(--color-primary-tint-2);
+  border-color: var(--color-primary);
+  transform: translateX(-4px);
+}
+.new-arrivals__link-icon {
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+.new-arrivals__link:hover .new-arrivals__link-icon {
+  transform: translateX(-4px);
+}
+
+/* شبکه کارت‌ها */
+.new-arrivals__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  align-items: stretch;
+}
+
+/* ==========================================================
+   کارت معرفی
+   ========================================================== */
+.intro-card {
+  width: 100%;
+  height: var(--card-height);
+  padding: var(--card-padding);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.intro-card__text {
+  font-size: var(--fs-body-3);
+  font-weight: var(--font-weight-bold);
+  line-height: 2.1;
+  color: var(--color-gray-10);
+  text-align: center;
+}
+
+.intro-card__images {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 12px;
+}
+.intro-card__image {
+  object-fit: contain;
+}
+.intro-card__image--lg {
+  width: 145px;
+  height: 182px;
+}
+.intro-card__image--sm {
+  width: 90px;
+  height: 118px;
+}
+
+/* ==========================================================
+   کارت محصول - با عکس object-fit: contain
+   ========================================================== */
+.product-card {
+  width: 100%;
+  height: var(--card-height);
+  background: var(--color-white);
+  border: var(--card-border);
+  border-radius: var(--card-radius);
+  box-shadow: var(--card-shadow);
+  padding: var(--card-padding);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--card-padding);
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  will-change: transform;
+  position: relative;
+  cursor: default;
+}
+
+.product-card:hover {
+  box-shadow: var(--card-shadow-hover);
+  transform: translateY(-8px) scale(1.02);
+  border-color: var(--color-primary-tint-4);
+}
+
+.product-card__image {
+  width: 100%;
+  height: 256px;
+  border-radius: var(--card-image-radius);
+  overflow: hidden;
+  flex-shrink: 0;
+  transform: translateZ(20px);
+  transition: transform 0.4s ease;
+  background: var(--color-gray-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.product-card:hover .product-card__image {
+  transform: translateZ(30px);
+}
+.product-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  transition: transform 0.5s ease;
+  padding: 8px;
+}
+.product-card:hover .product-card__image img {
+  transform: scale(1.05);
+}
+
+.product-card__info {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+  transform: translateZ(10px);
+}
+
+.product-card__description {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.product-card__name-row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product-card__title {
+  font-size: var(--fs-h6);
+  color: var(--color-gray-10);
+  text-align: right;
+  order: 0;
+}
+
+.product-card__wishlist {
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  order: 1;
+  font-size: 22px;
+  color: var(--color-gray-6);
+}
+.product-card__wishlist:hover {
+  transform: scale(1.15);
+  background: var(--color-primary-tint-2);
+  color: var(--color-primary);
+}
+.product-card__wishlist:active {
+  transform: scale(0.85);
+}
+
+.product-card__wishlist--active {
+  color: var(--color-primary);
+  animation: heartBeat 0.4s ease;
+}
+.product-card__wishlist--active i {
+  font-weight: 900;
+}
+
+@keyframes heartBeat {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.3);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  75% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.product-card__desc {
+  font-size: var(--fs-body-4);
+  color: var(--color-gray-6);
+  line-height: var(--line-height-body);
+  text-align: right;
+  width: 100%;
+}
+
+.product-card__price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-gray-10);
+}
+.product-card__price-label {
+  font-size: var(--fs-h6);
+}
+.product-card__price-amount {
+  font-size: var(--fs-h5);
+}
+
+/* ==========================================================
+   بخش ۲: پروموشن کارت دعوت عروسی - ریسپانسیو کامل
+   ========================================================== */
+.wedding-promo {
+  padding: 40px 0 64px;
+  background: var(--color-white);
+}
+.wedding-promo__container {
+  width: 1224px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* گالری دسکتاپ - ۴ ستون */
+.wedding-promo__gallery {
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+.wedding-promo__col {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: auto auto auto 250px;
+  grid-template-areas:
+    "img-three img-three"
+    "img-one img-two"
+    "img-four img-five"
+    "img-six img-six";
+  gap: 8px;
+}
+
+@media screen and (min-width: 992px) {
+  .wedding-promo__col {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+    grid-template-areas:
+      "img-five img-one img-two img-six"
+      "img-five img-four img-three img-six";
+    gap: 8px;
+  }
+  .wedding__grid-five {
+    height: 100% !important;
+  }
+  .wedding__grid-one {
+    height: 50px !important;
+  }
+  .wedding-promo__img {
+    height: 50px;
+  }
+}
+
+.wedding-promo__img {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  min-height: 100px;
+}
+.wedding-promo__img:hover {
+  transform: scale(1.02);
+}
+.wedding-promo__img--tall {
+  object-fit: cover;
+}
+
+.wedding__grid-one {
+  grid-area: img-one;
+}
+.wedding__grid-two {
+  grid-area: img-two;
+  height: 50px;
+}
+.wedding__grid-three {
+  grid-area: img-three;
+  height: 50px;
+}
+.wedding__grid-four {
+  grid-area: img-four;
+  height: 50px;
+}
+
+.wedding__grid-five {
+  grid-area: img-five;
+  height: 50px;
+}
+
+.wedding__grid-six {
+  grid-area: img-six;
+  object-fit: cover;
+  object-position: top;
+}
+
+.wedding-promo__title {
+  font-size: var(--fs-h4);
+  color: var(--color-gray-10);
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.wedding-promo__btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--color-primary);
+  color: #fff;
+  font-weight: var(--font-weight-bold);
+  font-size: var(--fs-body-3);
+  padding: 14px 32px;
+  border-radius: 14px;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+.wedding-promo__btn:hover {
+  background: var(--color-primary-shade-7);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(167, 47, 59, 0.3);
+}
+.wedding-promo__btn-icon {
+  font-size: 20px;
+}
+
+/* ==========================================================
+   مودال علاقه‌مندی‌ها
+   ========================================================== */
+.wishlist-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+}
+.wishlist-modal--open {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wishlist-modal__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+  animation: overlayFadeIn 0.3s ease;
+}
+@keyframes overlayFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.wishlist-modal__content {
+  position: relative;
+  background: var(--color-gray-10);
+  border-radius: 24px;
+  width: 90%;
+  max-width: 560px;
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 32px 80px rgba(0, 0, 0, 0.5);
+  animation: modalSlideUp 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+@keyframes modalSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.wishlist-modal__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+.wishlist-modal__title {
+  font-size: var(--fs-h5);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.wishlist-modal__title i {
+  font-size: 24px;
+}
+
+.wishlist-modal__close {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--color-gray-4);
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wishlist-modal__close:hover {
+  background: var(--color-primary);
+  color: var(--color-white);
+  transform: rotate(90deg);
+}
+
+.wishlist-modal__body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 16px 24px;
+  max-height: 400px;
+}
+.wishlist-modal__body::-webkit-scrollbar {
+  width: 4px;
+}
+.wishlist-modal__body::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
+}
+.wishlist-modal__body::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 4px;
+}
+
+.wishlist-modal__empty {
+  text-align: center;
+  padding: 40px 20px;
+  color: var(--color-gray-4);
+}
+.wishlist-modal__empty i {
+  display: block;
+  margin-bottom: 16px;
+}
+.wishlist-modal__empty p {
+  font-size: var(--fs-body-3);
+  color: var(--color-gray-4);
+}
+
+.wishlist-modal__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  animation: itemSlideIn 0.3s ease;
+}
+.wishlist-modal__item:last-child {
+  border-bottom: none;
+}
+@keyframes itemSlideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.wishlist-modal__item-info {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.wishlist-modal__item-img {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  object-fit: cover;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+.wishlist-modal__item-name {
+  font-size: var(--fs-body-3);
+  font-weight: var(--font-weight-bold);
+  color: #ffffff;
+}
+.wishlist-modal__item-price {
+  font-size: var(--fs-body-4);
+  color: var(--color-gray-4);
+}
+
+.wishlist-modal__item-remove {
+  background: rgba(255, 255, 255, 0.06);
+  border: none;
+  color: var(--color-gray-4);
+  cursor: pointer;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wishlist-modal__item-remove:hover {
+  background: var(--color-error);
+  color: var(--color-white);
+  transform: scale(1.1);
+}
+
+.wishlist-modal__footer {
+  padding: 16px 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  justify-content: flex-end;
+}
+.wishlist-modal__clear-all {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 24px;
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--color-gray-3);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  font-family: var(--font-primary);
+  font-size: var(--fs-body-4);
+  font-weight: var(--font-weight-bold);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.wishlist-modal__clear-all:hover {
+  background: var(--color-error);
+  color: var(--color-white);
+  border-color: var(--color-error);
+  transform: scale(1.05);
+}
+.wishlist-modal__clear-all i {
+  font-size: 18px;
+}
+
+/* ==========================================================
+   نوتیفیکیشن
+   ========================================================== */
+.notification-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
+  z-index: 3000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.notification-overlay--show {
+  display: flex;
+  animation: overlayFadeIn 0.4s ease;
+}
+
+.notification-wrapper {
+  background: var(--color-gray-10);
+  padding: 36px 48px;
+  border-radius: 24px;
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+  position: relative;
+  overflow: hidden;
+  animation: notificationPop 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+  box-shadow: 0 32px 80px rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+@keyframes notificationPop {
+  0% {
+    opacity: 0;
+    transform: scale(0.5) rotate(-3deg);
+  }
+  50% {
+    transform: scale(1.05) rotate(1deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+.notification-icon {
+  font-size: 56px;
+  margin-bottom: 12px;
+  animation: iconBounce 0.8s ease infinite alternate;
+  color: var(--color-success-light);
+}
+@keyframes iconBounce {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.15);
+  }
+}
+
+.notification-title {
+  font-size: var(--fs-h4);
+  font-weight: var(--font-weight-bold);
+  color: #ffffff;
+  margin-bottom: 6px;
+}
+.notification-text {
+  font-size: var(--fs-body-3);
+  color: rgba(255, 255, 255, 0.9);
+  line-height: var(--line-height-body);
+}
+
+.notification-progress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  background: linear-gradient(
+    90deg,
+    var(--color-primary),
+    var(--color-primary-tint-6)
+  );
+  animation: progressBar 2.5s linear forwards;
+}
+@keyframes progressBar {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0%;
+  }
+}
+
+/* ==========================================================
+   ریسپانسیو کامل
+   ========================================================== */
+
+/* لپ‌تاپ */
+@media (max-width: 1100px) {
+  .new-arrivals__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* تبلت */
+@media (max-width: 768px) {
+  .new-arrivals__container,
+  .wedding-promo__container {
+    padding: 0 16px;
+  }
+  .new-arrivals__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .new-arrivals__header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .new-arrivals__header-actions {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  /* عکس محصولات در تبلت - object-fit: contain */
+  .product-card__image {
+    height: 200px;
+  }
+  .product-card__image img {
+    object-fit: contain;
+    padding: 6px;
+  }
+  .product-card {
+    height: auto;
+    min-height: 340px;
+  }
+
+  .product-card__title {
+    font-size: var(--fs-body-3);
+  }
+  .product-card__price-amount {
+    font-size: var(--fs-body-3);
+  }
+  .product-card__price-label {
+    font-size: var(--fs-body-4);
+  }
+
+  /* گالری عروسی تبلت */
+  .wedding-promo__gallery {
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+  }
+  .wedding-promo__col--left {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+  }
+  .wedding-promo__col--pair {
+    grid-column: 2;
+  }
+  .wedding-promo__col--pair:nth-child(2) {
+    grid-row: 1;
+  }
+  .wedding-promo__col--pair:nth-child(3) {
+    grid-row: 2;
+  }
+  .wedding-promo__col--right {
+    grid-column: 1;
+    grid-row: 3 / span 2;
+  }
+  .wedding-promo__col--pair .wedding-promo__img {
+    height: 120px;
+  }
+  .wedding-promo__img--tall {
+    min-height: 30px;
+  }
+  .wedding-promo__title {
+    font-size: var(--fs-h5);
+  }
+
+  .notification-wrapper {
+    padding: 28px 24px;
+  }
+  .notification-icon {
+    font-size: 44px;
+  }
+  .notification-title {
+    font-size: var(--fs-h5);
+  }
+}
+
+/* موبایل */
+@media (max-width: 480px) {
+  /* هدر: دکمه‌ها بالا، عنوان زیرش (مطابق فیگما) */
+  .new-arrivals__header {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .new-arrivals__header-actions {
+    order: 1;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .new-arrivals__title {
+    order: 2;
+    font-size: var(--fs-h4);
+    text-align: center;
+  }
+
+  .new-arrivals__link {
+    padding: 6px 12px;
+    font-size: var(--fs-body-4);
+  }
+
+  .new-arrivals__wishlist-btn {
+    padding: 6px 12px;
+    font-size: 18px;
+  }
+
+  /* شبکه: ۲ ستونه، مطابق فیگما */
+  .new-arrivals__grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 12px;
+  }
+
+  /* کارت معرفی به‌صورت بنر تمام‌عرض بدون قاب، بالای شبکه محصولات */
+  .intro-card {
+    grid-column: 1 / -1;
+    height: auto;
+    min-height: 0;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 4px 0 12px;
+    gap: 18px;
+  }
+  .intro-card__text {
+    font-size: var(--fs-body-3);
+    line-height: 1.9;
+  }
+  .intro-card__images {
+    gap: 16px;
+  }
+  .intro-card__image--lg {
+    width: 130px;
+    height: 163px;
+  }
+  .intro-card__image--sm {
+    width: 82px;
+    height: 108px;
+  }
+
+  /* کارت محصول - فشرده برای ۲ ستون */
+  .product-card {
+    height: auto;
+    min-height: 0;
+    padding: 10px;
+    gap: 8px;
+  }
+
+  /* عکس محصولات در موبایل - object-fit: contain */
+  .product-card__image {
+    height: 140px;
+  }
+  .product-card__image img {
+    object-fit: contain;
+    padding: 4px;
+  }
+
+  .product-card__name-row {
+    gap: 4px;
+  }
+  .product-card__title {
+    font-size: var(--fs-body-4);
+  }
+  .product-card__wishlist {
+    width: 30px;
+    height: 30px;
+    font-size: 17px;
+  }
+  .product-card__desc {
+    font-size: var(--fs-body-5);
+    line-height: 1.6;
+  }
+  .product-card__price {
+    gap: 4px;
+  }
+  .product-card__price-amount {
+    font-size: var(--fs-body-3);
+  }
+  .product-card__price-label {
+    font-size: var(--fs-body-5);
+  }
+
+  /* گالری عروسی موبایل - اسلایدر افقی، عکس‌ها کامل و بدون برش دیده می‌شوند */
+  .wedding-promo__gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 8px;
+    padding-bottom: 6px;
+    scrollbar-width: none;
+  }
+  .wedding-promo__gallery::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* هر ستون فقط یک قاب گروه‌بندی بود؛ در اسلایدر باز می‌شود تا هر عکس اسلاید مستقل خودش را داشته باشد */
+  .wedding-promo__col {
+    display: contents;
+  }
+
+  .wedding-promo__img,
+  .wedding-promo__img--tall {
+    flex: 0 0 auto;
+    scroll-snap-align: center;
+    width: auto;
+    height: 168px;
+    min-height: 0;
+    object-fit: contain;
+    background: var(--color-gray-2);
+    border-radius: 12px;
+  }
+
+  .wedding-promo__title {
+    font-size: var(--fs-h6);
+    padding: 0 8px;
+  }
+  .wedding-promo__btn {
+    padding: 10px 20px;
+    font-size: var(--fs-body-4);
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* مودال موبایل */
+  .wishlist-modal__content {
+    width: 95%;
+    max-height: 90vh;
+    border-radius: 16px;
+  }
+  .wishlist-modal__header {
+    padding: 14px 16px;
+  }
+  .wishlist-modal__title {
+    font-size: var(--fs-h6);
+  }
+  .wishlist-modal__body {
+    padding: 12px 16px;
+    max-height: 300px;
+  }
+  .wishlist-modal__item {
+    padding: 10px 0;
+  }
+  .wishlist-modal__item-img {
+    width: 40px;
+    height: 40px;
+  }
+  .wishlist-modal__item-name {
+    font-size: var(--fs-body-4);
+  }
+  .wishlist-modal__item-price {
+    font-size: var(--fs-body-5);
+  }
+  .wishlist-modal__footer {
+    padding: 12px 16px;
+  }
+  .wishlist-modal__clear-all {
+    padding: 8px 16px;
+    font-size: var(--fs-body-4);
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* نوتیفیکیشن موبایل */
+  .notification-wrapper {
+    padding: 20px 16px;
+    border-radius: 16px;
+  }
+  .notification-icon {
+    font-size: 36px;
+  }
+  .notification-title {
+    font-size: var(--fs-h6);
+  }
+  .notification-text {
+    font-size: var(--fs-body-4);
+  }
+}
+
+/* موبایل کوچک */
+@media (max-width: 360px) {
+  .product-card__image {
+    height: 110px;
+  }
+  .product-card__desc {
+    font-size: var(--fs-body-5);
+  }
+  .product-card__title {
+    font-size: var(--fs-body-4);
+  }
+  .product-card__price-amount {
+    font-size: var(--fs-body-4);
+  }
+  .product-card__price-label {
+    font-size: var(--fs-body-5);
+  }
+  .wedding-promo__col--pair .wedding-promo__img,
+  .wedding-promo__img--tall {
+    height: 130px;
+    min-height: 0;
+  }
+}
+
+/*  علاقه مندی */
+
+div.topic {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 15px;
+}
+
+.topic-two {
+  display: flex;
+}
+div.topic img {
+  height: 55px;
+  display: none;
+}
+
+h3 {
+  font-family: var(--font-primary);
+  font-size: var(--fs-h3);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-heading);
+}
+
+.favorite-card-group {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.favorite-card {
+  width: 242px;
+  border: 2px solid rgb(214, 213, 213);
+  border-radius: 24px;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  -ms-border-radius: 24px;
+  -o-border-radius: 24px;
+  transition: 0.4s ease-in-out inherit;
+  -webkit-transition: 0.4s ease-in-out inherit;
+  -moz-transition: 0.4s ease-in-out inherit;
+  -ms-transition: 0.4s ease-in-out inherit;
+  -o-transition: 0.4s ease-in-out inherit;
+}
+.favorite-card:hover {
+  transform: translateY(-5px) scale(1.02) rotate(1deg);
+  border: 2px solid rgb(129, 127, 127);
+}
+.favorite-card-img {
+  width: 90%;
+  margin: 10px 5% 10px;
+}
+.favorite-card-img img {
+  width: 100%;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+div.favorite-card-info {
+  width: 85%;
+  margin: 0px 7.5% 15px;
+}
+div.favorite-card-info h4 {
+  font-size: var(--fs-h4);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-heading);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+div.favorite-card-info h4 img {
+  height: 20px;
+}
+div.favorite-card-info p {
+  font-size: var(--fs-body-3);
+}
+div.favorite-card-info p.favorite-price {
+  font-size: var(--fs-body-1);
+  margin-top: 30px;
+  text-align: left;
+}
+@media (min-width: 992px) {
+  div.topic img {
+    display: block;
+  }
+  h3 {
+    font-size: 3rem;
+    font-weight: 500;
+  }
+  .favorite {
+    width: 1224px;
+    margin-inline: auto;
+    .favorite-card-group {
+      gap: 0 !important;
+
+      justify-content: space-between;
+
+      .favorite-card {
+        width: 290px;
+        margin-block: 10px;
+      }
+    }
+  }
+}
+
+/* ===================================
+
+Start Footer
+
+==================================*/
+
+.footer {
+  direction: rtl;
+  margin-top: 3rem;
+}
+
+.container {
+  max-width: 1224px;
+  margin: 0 auto;
+  padding: 1rem 20px;
+}
+
+.footer-top {
+  background-color: #641c23;
+  color: #ffffff;
+  padding: 30px 0;
+}
+
+.footer-top-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.social-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0.6;
+}
+
+.social-section p {
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 22px;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ccc;
+}
+
+.newsletter-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+}
+
+.newsletter-section p {
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.newsletter-form {
+  display: flex;
+  direction: ltr;
+  gap: 10px;
+}
+
+.newsletter-form input {
+  padding: 10px 30px;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  outline: none;
+  width: 220px;
+  background-color: #641c23;
+  color: #ffffff;
+  text-align: center;
+}
+
+.newsletter-form input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.newsletter-form button {
+  background-color: #a7313b;
+  color: #fff;
+  border: none;
+  padding: 0 25px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.newsletter-form button:hover {
+  background-color: #c16464;
+}
+
+.footer-main {
+  background-color: #a7313b;
+  color: #ffffff;
+  padding: 40px 0 10px;
+}
+
+.footer-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-bottom: 30px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 160px;
+}
+
+.contact-col {
+  flex: 2;
+  min-width: 220px;
+}
+
+.footer-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  position: relative;
+  text-align: center;
+}
+
+.footer-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 2px;
+  background-color: #ffffff;
+}
+
+.footer-links {
+  text-align: center;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  font-size: 13px;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  opacity: 1.5;
+}
+
+.contact-col .footer-title {
+  text-align: center;
+}
+
+.contact-info {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  font-size: 13px;
+  margin-bottom: 6px;
+  opacity: 0.8;
+}
+
+.footer-logos {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.footer-logos img {
+  width: 65px;
+  height: 65px;
+  object-fit: contain;
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 5px;
+}
+
+.footer-copyright {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 15px 0;
+  text-align: left;
+  direction: ltr;
+}
+
+.footer-copyright p {
+  font-size: 12px;
+  opacity: 0.7;
+  direction: rtl;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .footer-top-content {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+
+  .newsletter-section {
+    align-items: center;
+    width: 100%;
+  }
+
+  .newsletter-form {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .newsletter-form input {
+    flex: 1;
+    width: auto;
+  }
+
+  .footer-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-col {
+    width: 100%;
+  }
+}
